@@ -1,0 +1,4 @@
+[2026-05-18 22:22:53] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-18 22:22:55] [INFO] [conftest] Chrome launched successfully
+[2026-05-18 22:24:26] [INFO] [conftest] [CSV] test_cab_booking → PASSED (91.16s)
+[2026-05-18 22:24:26] [INFO] [conftest] === Tearing down Chrome WebDriver ===
