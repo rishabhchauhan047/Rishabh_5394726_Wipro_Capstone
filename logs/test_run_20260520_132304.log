@@ -1,0 +1,15 @@
+[2026-05-20 13:23:05] [INFO] [test_cab_booking] === TEST START: test_cab_booking_delhi_to_agra ===
+[2026-05-20 13:24:39] [INFO] [test_cab_booking] === TEST END: test_cab_booking_delhi_to_agra ===
+[2026-05-20 13:24:43] [INFO] [test_cab_booking] === TEST START: test_cab_booking_mumbai_to_pune ===
+[2026-05-20 13:26:11] [INFO] [test_cab_booking] === TEST END: test_cab_booking_mumbai_to_pune ===
+[2026-05-20 13:26:14] [INFO] [test_cab_booking] === TEST START: test_cab_booking_bangalore_to_mysore ===
+[2026-05-20 13:27:44] [INFO] [test_cab_booking] === TEST END: test_cab_booking_bangalore_to_mysore ===
+[2026-05-20 13:27:47] [INFO] [test_cab_booking] === TEST START: test_cab_booking_chennai_to_pondicherry ===
+[2026-05-20 13:29:23] [INFO] [test_cab_booking] === TEST END: test_cab_booking_chennai_to_pondicherry ===
+[2026-05-20 13:29:26] [INFO] [test_cab_booking] === TEST START: test_cab_booking_hyderabad_to_vijayawada ===
+[2026-05-20 13:31:04] [INFO] [test_cab_booking] === TEST END: test_cab_booking_hyderabad_to_vijayawada ===
+[2026-05-20 13:31:07] [INFO] [test_cab_booking] === TEST START: test_cab_booking_invalid_from_city ===
+[2026-05-20 13:31:33] [INFO] [test_cab_booking] Entering invalid FROM city: XYZABC123
+[2026-05-20 13:32:01] [INFO] [test_cab_booking] === TEST START: test_cab_count_exceeds_100 ===
+[2026-05-20 13:33:21] [INFO] [test_cab_booking] Cabs found on page: 13
+[2026-05-20 13:33:21] [ERROR] [test_cab_booking] TC07 asserting 13 > 100 — this will fail

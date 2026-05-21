@@ -1,0 +1,7 @@
+[32mINFO    [0m CabBookingPage:base_page.py:103 Opening Goibibo Cabs page directly
+[32mINFO    [0m CabBookingPage:base_page.py:103 Checking and closing popups if present
+[32mINFO    [0m CabBookingPage:base_page.py:134 Screenshot captured: screenshots\01_cabs_page_direct.png
+[32mINFO    [0m CabBookingPage:base_page.py:103 Checking and closing popups if present
+[32mINFO    [0m CabBookingPage:base_page.py:103 Selecting From city: Delhi
+[32mINFO    [0m CabBookingPage:base_page.py:134 Screenshot captured: screenshots\tc02_positive_pickup_city_selected.png
+[32mINFO    [0m CabBookingPage:base_page.py:103 Positive test passed: Pickup city selected as Delhi.

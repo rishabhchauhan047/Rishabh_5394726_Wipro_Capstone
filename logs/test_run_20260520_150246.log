@@ -1,0 +1,15 @@
+[2026-05-20 15:02:46] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-20 15:02:47] [INFO] [conftest] Chrome launched successfully
+[2026-05-20 15:02:47] [INFO] [test_cab_booking] === TEST START: test_filter_hatchback ===
+[2026-05-20 15:03:31] [ERROR] [conftest] FAILED — screenshot saved: screenshots/FAILED_test_filter_hatchback_20260520_150331.png
+[2026-05-20 15:03:31] [INFO] [conftest] [CSV] test_filter_hatchback → FAILED (44.49s)
+[2026-05-20 15:03:31] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-20 15:03:34] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-20 15:03:34] [INFO] [conftest] Chrome launched successfully
+[2026-05-20 15:03:34] [INFO] [test_cab_booking] === TEST START: test_filter_sedan ===
+[2026-05-20 15:04:19] [ERROR] [conftest] FAILED — screenshot saved: screenshots/FAILED_test_filter_sedan_20260520_150419.png
+[2026-05-20 15:04:19] [INFO] [conftest] [CSV] test_filter_sedan → FAILED (44.62s)
+[2026-05-20 15:04:19] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-20 15:04:21] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-20 15:04:22] [INFO] [conftest] Chrome launched successfully
+[2026-05-20 15:04:22] [INFO] [test_cab_booking] === TEST START: test_filter_suv ===

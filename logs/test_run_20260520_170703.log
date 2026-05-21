@@ -1,0 +1,5 @@
+[2026-05-20 17:07:03] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-20 17:07:13] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-20 17:07:13] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-20 17:07:18] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-20 17:07:23] [INFO] [CabBookingPage] Entering FROM city: Delhi

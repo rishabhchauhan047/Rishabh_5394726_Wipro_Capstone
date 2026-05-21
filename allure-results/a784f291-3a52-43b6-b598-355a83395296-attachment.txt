@@ -1,0 +1,1 @@
+Positive test passed: Cabs page opened successfully.

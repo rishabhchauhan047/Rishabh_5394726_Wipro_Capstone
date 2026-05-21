@@ -1,0 +1,88 @@
+[2026-05-20 15:26:21] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-20 15:26:21] [INFO] [conftest] Chrome launched successfully
+[2026-05-20 15:26:49] [ERROR] [conftest] FAILED — screenshot saved: screenshots/FAILED_test_filter_hatchback_20260520_152649.png
+[2026-05-20 15:26:50] [ERROR] [conftest] Could not write to CSV due to persistent lock: ['2026-05-20 15:26:49', 'test_filter_hatchback', 'FAILED', 27.98, 'driver = <selenium.webdriver.chrome.webdriver.WebDriver (session="44c5970de71718f098cad83d454edd4d")>\n\n    @allure.feature("Cab Booking - Filters")\n    @allure.story("Filter by Cab Type")\n    @allure.title("TC01 - Hatchback filter shows results")\n    @allure.severity(allure.severity_level.CRITICAL)\n']
+[2026-05-20 15:26:50] [INFO] [conftest] [CSV] test_filter_hatchback → FAILED (27.98s)
+[2026-05-20 15:26:50] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-20 15:26:53] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-20 15:26:53] [INFO] [conftest] Chrome launched successfully
+[2026-05-20 15:27:06] [ERROR] [conftest] Could not capture screenshot for test_filter_sedan: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff675527de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff675527e50+14900]
+	chromedriver!(No symbol) [0x7ff67528d396]
+	chromedriver!(No symbol) [0x7ff6752d8e76]
+	chromedriver!(No symbol) [0x7ff67530ff62]
+	chromedriver!(No symbol) [0x7ff675309d7f]
+	chromedriver!(No symbol) [0x7ff675309543]
+	chromedriver!(No symbol) [0x7ff675256325]
+	chromedriver!GetHandleVerifier [0x7ff67583cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff675837375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff67585bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff675546045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff67554ecec+3b79c]
+	chromedriver!(No symbol) [0x7ff6752550bc]
+	chromedriver!GetHandleVerifier [0x7ff6759a0b18+48d5c8]
+	KERNEL32!BaseThreadInitThunk [0x7ff9e900e957+17]
+	ntdll!RtlUserThreadStart [0x7ff9eb14427c+2c]
+
+[2026-05-20 15:27:07] [ERROR] [conftest] Could not write to CSV due to persistent lock: ['2026-05-20 15:27:06', 'test_filter_sedan', 'FAILED', 12.78, 'driver = <selenium.webdriver.chrome.webdriver.WebDriver (session="8fab6837c4bdc9331406ae1aa271b6cd")>\n\n    @allure.feature("Cab Booking - Filters")\n    @allure.story("Filter by Cab Type")\n    @allure.title("TC02 - Sedan filter shows results")\n    @allure.severity(allure.severity_level.CRITICAL)\n    ']
+[2026-05-20 15:27:07] [INFO] [conftest] [CSV] test_filter_sedan → FAILED (12.78s)
+[2026-05-20 15:27:07] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-20 15:27:09] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-20 15:27:10] [INFO] [conftest] Chrome launched successfully
+[2026-05-20 15:27:11] [ERROR] [conftest] Could not capture screenshot for test_filter_suv: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff675527de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff675527e50+14900]
+	chromedriver!(No symbol) [0x7ff67528d5ad]
+	chromedriver!(No symbol) [0x7ff6752640f2]
+	chromedriver!(No symbol) [0x7ff675316f56]
+	chromedriver!(No symbol) [0x7ff675334172]
+	chromedriver!(No symbol) [0x7ff6752d9df8]
+	chromedriver!(No symbol) [0x7ff6752dace3]
+	chromedriver!GetHandleVerifier [0x7ff67583cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff675837375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff67585bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff675546045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff67554ecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff675531bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff675531d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6755160e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff9e900e957+17]
+	ntdll!RtlUserThreadStart [0x7ff9eb14427c+2c]
+
+[2026-05-20 15:27:12] [ERROR] [conftest] Could not write to CSV due to persistent lock: ['2026-05-20 15:27:11', 'test_filter_suv', 'FAILED', 1.41, 'driver = <selenium.webdriver.chrome.webdriver.WebDriver (session="6ca813eb0d02589c9593b3f733a29e2d")>\n\n    @allure.feature("Cab Booking - Filters")\n    @allure.story("Filter by Cab Type")\n    @allure.title("TC03 - SUV filter shows results")\n    @allure.severity(allure.severity_level.NORMAL)\n    def ']
+[2026-05-20 15:27:12] [INFO] [conftest] [CSV] test_filter_suv → FAILED (1.41s)
+[2026-05-20 15:27:12] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-20 15:27:14] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-20 15:27:15] [INFO] [conftest] Chrome launched successfully
+[2026-05-20 15:27:16] [ERROR] [conftest] Could not capture screenshot for test_filter_clear_all: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff675527de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff675527e50+14900]
+	chromedriver!(No symbol) [0x7ff67528d5ad]
+	chromedriver!(No symbol) [0x7ff6752640f2]
+	chromedriver!(No symbol) [0x7ff675316f56]
+	chromedriver!(No symbol) [0x7ff675334172]
+	chromedriver!(No symbol) [0x7ff6752d9df8]
+	chromedriver!(No symbol) [0x7ff6752dace3]
+	chromedriver!GetHandleVerifier [0x7ff67583cc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff675837375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff67585bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff675546045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff67554ecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff675531bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff675531d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6755160e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ff9e900e957+17]
+	ntdll!RtlUserThreadStart [0x7ff9eb14427c+2c]
+
+[2026-05-20 15:27:17] [ERROR] [conftest] Could not write to CSV due to persistent lock: ['2026-05-20 15:27:16', 'test_filter_clear_all', 'FAILED', 0.84, 'driver = <selenium.webdriver.chrome.webdriver.WebDriver (session="39379ed65a382a4c4f6a985f5cca536a")>\n\n    @allure.feature("Cab Booking - Filters")\n    @allure.story("Filter Reset")\n    @allure.title("TC04 - Sedan then CLEAR ALL resets results")\n    @allure.severity(allure.severity_level.NORMAL)\n   ']
+[2026-05-20 15:27:17] [INFO] [conftest] [CSV] test_filter_clear_all → FAILED (0.84s)
+[2026-05-20 15:27:17] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-20 15:27:19] [INFO] [conftest] === Setting up Chrome WebDriver ===

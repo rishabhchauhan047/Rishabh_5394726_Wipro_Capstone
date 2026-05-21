@@ -1,0 +1,521 @@
+Timestamp,Test Name,Status,Duration (s),Failure Reason
+2026-05-18 22:24:26,test_cab_booking,PASSED,91.16,
+2026-05-19 00:51:04,test_cab_booking_delhi_to_agra,PASSED,86.64,
+2026-05-19 00:52:34,test_cab_booking_mumbai_to_pune,PASSED,86.07,
+2026-05-19 00:54:05,test_cab_booking_bangalore_to_mysore,PASSED,88.18,
+2026-05-19 00:55:40,test_cab_booking_chennai_to_pondicherry,PASSED,92.12,
+2026-05-19 00:57:15,test_cab_booking_hyderabad_to_vijayawada,PASSED,92.07,
+2026-05-19 00:58:05,test_cab_booking_invalid_from_city,FAILED,46.59,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""ed1ff495926c069ce369589d0c0cbe24"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC06 - FAIL: Invalid FROM city should raise error"")
+    @allure.severity(allure.severity_level.MINOR)
+    d"
+2026-05-19 00:59:13,test_cab_count_exceeds_100,FAILED,65.83,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""74c830dbaa0efb96018ef7b9135cf679"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC07 - FAIL: Verify cab count is greater than 100 (impossible)"")
+    @allure.severity(allure.severity_level"
+2026-05-19 22:30:54,test_cab_booking_delhi_to_agra,PASSED,86.47,
+2026-05-19 22:32:29,test_cab_booking_mumbai_to_pune,PASSED,92.01,
+2026-05-19 22:33:59,test_cab_booking_bangalore_to_mysore,PASSED,86.9,
+2026-05-19 22:35:27,test_cab_booking_chennai_to_pondicherry,PASSED,84.75,
+2026-05-19 22:37:01,test_cab_booking_hyderabad_to_vijayawada,PASSED,91.69,
+2026-05-19 22:37:51,test_cab_booking_invalid_from_city,FAILED,46.44,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""ef61643daa06ca983b37f97042dba3f1"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC06 - FAIL: Invalid FROM city should raise error"")
+    @allure.severity(allure.severity_level.MINOR)
+    d"
+2026-05-19 22:38:59,test_cab_count_exceeds_100,FAILED,65.27,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""b9f5c97a1bf5fb9b68c8a7335f160239"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC07 - FAIL: Verify cab count is greater than 100 (impossible)"")
+    @allure.severity(allure.severity_level"
+2026-05-20 12:44:11,test_end_to_end_booking,PASSED,115.97,
+2026-05-20 12:45:30,test_filter_hatchback,FAILED,76.21,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""f588bd9795650afd3a713800ccf21024"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Filter by Hatchback shows results"")
+    @allure.severity(allure.severity_level.CRITICA"
+2026-05-20 12:46:44,test_filter_sedan,FAILED,71.14,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""d9fb3835b0da113e0cb40bd38b5f0bbe"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Filter by Sedan shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+ "
+2026-05-20 12:48:02,test_filter_suv,FAILED,74.91,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""1fea6559f1d700b857674d74f0b3164d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC03 - Filter by SUV shows results"")
+    @allure.severity(allure.severity_level.NORMAL)
+    d"
+2026-05-20 12:49:14,test_filter_sedan_then_clear,FAILED,69.63,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""e9e2b6b665da6a6510fedd6836fac67d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter Reset"")
+    @allure.title(""TC04 - Apply Sedan filter then CLEAR ALL resets results"")
+    @allure.severity(allure.severity_leve"
+2026-05-20 12:50:36,test_filter_hatchback_and_sedan,FAILED,78.55,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""8aa1ab56321e1b637ec1f07741fe4bb7"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Multiple Filters"")
+    @allure.title(""TC05 - Apply Hatchback then Sedan filter shows combined results"")
+    @allure.severity(allure.s"
+2026-05-20 12:51:32,test_cab_booking_invalid_from_city,FAILED,53.73,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""add5bdb3de405727dff955ddd9e32cd1"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC06 - FAIL: Invalid FROM city raises TimeoutException"")
+    @allure.severity(allure.severity_lev"
+2026-05-20 12:53:05,test_filter_suv_count_exceeds_100,FAILED,89.31,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""aa6fb844017748d6388d36c4ed268a44"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC07 - FAIL: SUV cab count exceeds 100 (impossible)"")
+    @allure.severity(allure.severity_level."
+2026-05-20 12:58:40,test_end_to_end_booking,FAILED,23.11,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""72f8a3189bd8b0d4d78f6554b296443f"")>
+
+    @allure.feature(""Cab Booking - E2E"")
+    @allure.story(""Full Purchase Funnel"")
+    @allure.title(""E2E - Complete booking path to payment screen"")
+    @allure.severity(allure.severity_level.BLOC"
+2026-05-20 12:59:07,test_filter_hatchback,FAILED,23.9,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""b1dae9406611e44ad4ee3dbb4ae3ac78"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Cab Category Filters"")
+    @allure.title(""TC01 - Verify Hatchback category yields results"")
+    @allure.severity(allure.severity_leve"
+2026-05-20 12:59:38,test_filter_sedan,FAILED,28.12,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""1f369a8cd45762b972bdd504f69e4ffb"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Cab Category Filters"")
+    @allure.title(""TC02 - Verify Sedan category yields results"")
+    @allure.severity(allure.severity_level.CR"
+2026-05-20 13:00:01,test_filter_suv,FAILED,20.23,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""e1ec47eeea8553a30e33bd2a7a691b5c"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Cab Category Filters"")
+    @allure.title(""TC03 - Verify SUV category yields results"")
+    @allure.severity(allure.severity_level.NORM"
+2026-05-20 13:00:23,test_filter_sedan_then_clear,FAILED,18.74,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""77f7d8429f510fad53a881c83d348f9f"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Reset Filter Functions"")
+    @allure.title(""TC04 - Reset filters via CLEAR ALL button"")
+    @allure.severity(allure.severity_level.NO"
+2026-05-20 13:00:44,test_filter_hatchback_and_sedan,FAILED,18.53,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""71ef8bbe4181bdbe12b2b07261d7b208"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Compound Filtering Logic"")
+    @allure.title(""TC05 - Apply multiple simultaneous filters"")
+    @allure.severity(allure.severity_level"
+2026-05-20 13:01:16,test_cab_booking_invalid_from_city,FAILED,28.2,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""06d66afaf391b424e776652f9b8d5e6e"")>
+
+    @allure.feature(""Cab Booking - Negative Verifications"")
+    @allure.story(""Input Validation"")
+    @allure.title(""TC06 - Application safely handles unrecognized locations"")
+    @allure.severity("
+2026-05-20 13:01:57,test_filter_suv_count_exceeds_expected_limit,FAILED,38.39,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""f70945ce32e9cc5b55efcebc219fc8d8"")>
+
+    @allure.feature(""Cab Booking - Negative Verifications"")
+    @allure.story(""Boundary Assertions"")
+    @allure.title(""TC07 - Validation of maximum matching inventory boundaries"")
+    @allure.seve"
+2026-05-20 13:24:39,test_cab_booking_delhi_to_agra,PASSED,94.23,
+2026-05-20 13:26:11,test_cab_booking_mumbai_to_pune,PASSED,88.71,
+2026-05-20 13:27:44,test_cab_booking_bangalore_to_mysore,PASSED,90.18,
+2026-05-20 13:29:23,test_cab_booking_chennai_to_pondicherry,PASSED,95.57,
+2026-05-20 13:31:04,test_cab_booking_hyderabad_to_vijayawada,PASSED,97.88,
+2026-05-20 13:31:58,test_cab_booking_invalid_from_city,FAILED,51.24,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""4988859fdbd4cc8256eee1467c279958"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC06 - FAIL: Invalid FROM city should raise error"")
+    @allure.severity(allure.severity_level.MINOR)
+    d"
+2026-05-20 13:33:21,test_cab_count_exceeds_100,FAILED,79.88,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""52649b0235be3f9d656efaf5e9786206"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC07 - FAIL: Verify cab count is greater than 100 (impossible)"")
+    @allure.severity(allure.severity_level"
+2026-05-20 14:25:00,test_end_to_end_booking,FAILED,52.92,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""61b4308f7ef7d25c996722e0ad12d2cf"")>
+
+    @allure.feature(""Cab Booking - End to End"")
+    @allure.story(""Full Booking Flow"")
+    @allure.title(""E2E - Delhi to Agra, select cab, proceed to payment, fill card"")
+    @allure.severity(allur"
+2026-05-20 14:25:56,test_cab_delhi_to_agra,FAILED,53.08,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""d523ecb1691c20c4656a9520244a35b4"")>
+
+    @allure.feature(""Cab Booking - City Routes"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC01 - Delhi to Agra — Select any available cab"")
+    @allure.severity(allure.severity"
+2026-05-20 14:39:15,test_end_to_end_booking,FAILED,27.66,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""ba9f4b7cfafb5f69e214a5b5de05b7e9"")>
+
+    @allure.feature(""Cab Booking - End to End"")
+    @allure.story(""Full Booking Flow"")
+    @allure.title(""E2E - Delhi to Agra, select cab, go to payment, fill card"")
+    @allure.severity(allure.sev"
+2026-05-20 14:39:45,test_cab_delhi_to_agra,FAILED,27.14,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""7b3c83290b8ac9a201d5126c660fcf15"")>
+
+    @allure.feature(""Cab Booking - City Routes"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC01 - Delhi to Agra — Hatchback"")
+    @allure.severity(allure.severity_level.CRITICAL"
+2026-05-20 14:44:56,test_end_to_end_booking,FAILED,46.46,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""8fc7c25d30300bc365dad07484597600"")>
+
+    @allure.feature(""Cab Booking - End to End"")
+    @allure.story(""Full Booking Flow"")
+    @allure.title(""E2E - Delhi to Agra, select cab, payment page, fill card"")
+    @allure.severity(allure.seve"
+2026-05-20 14:57:34,test_end_to_end_booking,FAILED,29.74,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""94297f1f61938dee6575410dc7ce4b8c"")>
+
+    @allure.feature(""Cab Booking - End to End"")
+    @allure.story(""Full Booking Flow"")
+    @allure.title(""E2E - Delhi to Agra, select cab, payment, fill card"")
+    @allure.severity(allure.severity_"
+2026-05-20 14:58:06,test_cab_delhi_to_agra,FAILED,29.15,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""01ecc65205c2d9a9b1b96678396fb3a6"")>
+
+    @allure.feature(""Cab Booking - City Routes"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC01 - Delhi to Agra — Hatchback"")
+    @allure.severity(allure.severity_level.CRITICAL"
+2026-05-20 15:03:31,test_filter_hatchback,FAILED,44.49,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""30a0fff48809cbb11956ed3bfa3fe46d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Delhi to Agra — Hatchback filter shows results"")
+    @allure.severity(allure.severity_"
+2026-05-20 15:04:19,test_filter_sedan,FAILED,44.62,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""e69748c7ea1bc84fe38cb0cfcf02a8d7"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Delhi to Agra — Sedan filter shows results"")
+    @allure.severity(allure.severity_leve"
+2026-05-20 15:05:52,test_cab_booking_delhi_to_agra,FAILED,44.56,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""2e362b289f55f389c63927ba6536e7c4"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC01 - Book a cab from Delhi to Agra"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    def "
+2026-05-20 15:06:39,test_cab_booking_mumbai_to_pune,FAILED,44.3,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""6d582467e6376f5ffe20cbd4fabc2ebe"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC02 - Book a cab from Mumbai to Pune"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    def"
+2026-05-20 15:07:27,test_cab_booking_bangalore_to_mysore,FAILED,44.21,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""c191d6a114ecc2dfb3a8cfe4ffab79c6"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC03 - Book a cab from Bangalore to Mysore"")
+    @allure.severity(allure.severity_level.NORMAL)
+    "
+2026-05-20 15:08:14,test_cab_booking_chennai_to_pondicherry,FAILED,44.12,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""785dfd906adb9b10b0ae7033480503c3"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC04 - Book a cab from Chennai to Pondicherry"")
+    @allure.severity(allure.severity_level.NORMAL)
+ "
+2026-05-20 15:22:23,test_filter_hatchback,FAILED,28.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""cd7552d1f5a36ab67643aca5fdd870f2"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:23:58,test_filter_hatchback,FAILED,28.16,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""48efb0480e873dabba59d146e5dae257"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:23:58,test_filter_hatchback,FAILED,28.16,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""48efb0480e873dabba59d146e5dae257"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:23:58,test_filter_hatchback,FAILED,28.16,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""48efb0480e873dabba59d146e5dae257"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:23:58,test_filter_hatchback,FAILED,28.16,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""48efb0480e873dabba59d146e5dae257"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:23:58,test_filter_hatchback,FAILED,28.16,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""48efb0480e873dabba59d146e5dae257"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:26:49,test_filter_hatchback,FAILED,27.98,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""44c5970de71718f098cad83d454edd4d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:26:49,test_filter_hatchback,FAILED,27.98,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""44c5970de71718f098cad83d454edd4d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:26:49,test_filter_hatchback,FAILED,27.98,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""44c5970de71718f098cad83d454edd4d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:26:49,test_filter_hatchback,FAILED,27.98,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""44c5970de71718f098cad83d454edd4d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:26:49,test_filter_hatchback,FAILED,27.98,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""44c5970de71718f098cad83d454edd4d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:27:06,test_filter_sedan,FAILED,12.78,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""8fab6837c4bdc9331406ae1aa271b6cd"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Sedan filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    "
+2026-05-20 15:27:06,test_filter_sedan,FAILED,12.78,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""8fab6837c4bdc9331406ae1aa271b6cd"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Sedan filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    "
+2026-05-20 15:27:06,test_filter_sedan,FAILED,12.78,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""8fab6837c4bdc9331406ae1aa271b6cd"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Sedan filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    "
+2026-05-20 15:27:06,test_filter_sedan,FAILED,12.78,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""8fab6837c4bdc9331406ae1aa271b6cd"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Sedan filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    "
+2026-05-20 15:27:06,test_filter_sedan,FAILED,12.78,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""8fab6837c4bdc9331406ae1aa271b6cd"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Sedan filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    "
+2026-05-20 15:27:11,test_filter_suv,FAILED,1.41,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""6ca813eb0d02589c9593b3f733a29e2d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC03 - SUV filter shows results"")
+    @allure.severity(allure.severity_level.NORMAL)
+    def "
+2026-05-20 15:27:11,test_filter_suv,FAILED,1.41,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""6ca813eb0d02589c9593b3f733a29e2d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC03 - SUV filter shows results"")
+    @allure.severity(allure.severity_level.NORMAL)
+    def "
+2026-05-20 15:27:11,test_filter_suv,FAILED,1.41,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""6ca813eb0d02589c9593b3f733a29e2d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC03 - SUV filter shows results"")
+    @allure.severity(allure.severity_level.NORMAL)
+    def "
+2026-05-20 15:27:11,test_filter_suv,FAILED,1.41,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""6ca813eb0d02589c9593b3f733a29e2d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC03 - SUV filter shows results"")
+    @allure.severity(allure.severity_level.NORMAL)
+    def "
+2026-05-20 15:27:11,test_filter_suv,FAILED,1.41,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""6ca813eb0d02589c9593b3f733a29e2d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC03 - SUV filter shows results"")
+    @allure.severity(allure.severity_level.NORMAL)
+    def "
+2026-05-20 15:27:16,test_filter_clear_all,FAILED,0.84,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""39379ed65a382a4c4f6a985f5cca536a"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter Reset"")
+    @allure.title(""TC04 - Sedan then CLEAR ALL resets results"")
+    @allure.severity(allure.severity_level.NORMAL)
+   "
+2026-05-20 15:27:16,test_filter_clear_all,FAILED,0.84,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""39379ed65a382a4c4f6a985f5cca536a"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter Reset"")
+    @allure.title(""TC04 - Sedan then CLEAR ALL resets results"")
+    @allure.severity(allure.severity_level.NORMAL)
+   "
+2026-05-20 15:27:16,test_filter_clear_all,FAILED,0.84,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""39379ed65a382a4c4f6a985f5cca536a"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter Reset"")
+    @allure.title(""TC04 - Sedan then CLEAR ALL resets results"")
+    @allure.severity(allure.severity_level.NORMAL)
+   "
+2026-05-20 15:27:16,test_filter_clear_all,FAILED,0.84,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""39379ed65a382a4c4f6a985f5cca536a"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter Reset"")
+    @allure.title(""TC04 - Sedan then CLEAR ALL resets results"")
+    @allure.severity(allure.severity_level.NORMAL)
+   "
+2026-05-20 15:27:16,test_filter_clear_all,FAILED,0.84,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""39379ed65a382a4c4f6a985f5cca536a"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter Reset"")
+    @allure.title(""TC04 - Sedan then CLEAR ALL resets results"")
+    @allure.severity(allure.severity_level.NORMAL)
+   "
+2026-05-20 15:28:19,test_filter_hatchback,FAILED,27.94,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""ba390a1e0a8de09026f3184ed95bc487"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC01 - Hatchback filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+"
+2026-05-20 15:28:38,test_filter_sedan,FAILED,16.81,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""df0a0a2d0142d8fac4b97259a351b23d"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC02 - Sedan filter shows results"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    "
+2026-05-20 15:28:42,test_filter_suv,FAILED,0.91,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""a67302d399d41c250e0759fb8c105c26"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter by Cab Type"")
+    @allure.title(""TC03 - SUV filter shows results"")
+    @allure.severity(allure.severity_level.NORMAL)
+    def "
+2026-05-20 15:28:45,test_filter_clear_all,FAILED,0.72,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""279cfb4f6d3f0e8db3673e6051019b95"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Filter Reset"")
+    @allure.title(""TC04 - Sedan then CLEAR ALL resets results"")
+    @allure.severity(allure.severity_level.NORMAL)
+   "
+2026-05-20 15:28:49,test_filter_hatchback_and_sedan,FAILED,0.65,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""5a4932393e12cf3685021240d51ce450"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Multiple Filters"")
+    @allure.title(""TC05 - Hatchback + Sedan combined"")
+    @allure.severity(allure.severity_level.NORMAL)
+    def "
+2026-05-20 15:28:53,test_invalid_city,FAILED,1.04,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""c41e796db7963bc8f86eda97cc937b84"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC06 - FAIL: Invalid city â€” no suggestion found"")
+    @allure.severity(allure.severity_level.MINO"
+2026-05-20 15:28:56,test_suv_count_exceeds_100,FAILED,0.46,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""02dcb3384a244063afd09c362858b517"")>
+
+    @allure.feature(""Cab Booking - Filters"")
+    @allure.story(""Negative Tests"")
+    @allure.title(""TC07 - FAIL: SUV count exceeds 100 â€” impossible"")
+    @allure.severity(allure.severity_level.MINO"
+2026-05-20 15:54:22,test_cab_booking_delhi_to_agra,FAILED,44.76,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""4b62c66b8bec64e93a75f17d42fc7ea2"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.title(""TC01 - Book a cab from Delhi to Agra"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    def "
+2026-05-20 16:00:57,test_cab_booking_delhi_to_agra,FAILED,0.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""4d684065a28b4c8d722a91e44f822790"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title(""TC01 - Book a cab from Delhi to Agra"")
+    def "
+2026-05-20 16:01:00,test_cab_booking_mumbai_to_pune,FAILED,0.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""e567092d7f1c154d34f4e2993de3cf8d"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title(""TC02 - Book a cab from Mumbai to Pune"")
+    def"
+2026-05-20 16:01:03,test_cab_booking_bengaluru_to_mysuru,FAILED,0.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""4fa5622b7131717e167e68c3cf2ef1ab"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.severity(allure.severity_level.NORMAL)
+    @allure.title(""TC03 - Book a cab from Bengaluru to Mysuru"")
+    "
+2026-05-20 16:01:06,test_cab_booking_chennai_to_puducherry,FAILED,0.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""db640d994671dbdd505cfda98cfd7399"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.severity(allure.severity_level.NORMAL)
+    @allure.title(""TC04 - Book a cab from Chennai to Puducherry"")
+  "
+2026-05-20 16:01:09,test_cab_booking_hyderabad_to_vijayawada,FAILED,0.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""3c3f15cd51c70aa74a2e3c480db7aaba"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Search and Select Cab"")
+    @allure.severity(allure.severity_level.NORMAL)
+    @allure.title(""TC05 - Book a cab from Hyderabad to Vijayawada"")
+"
+2026-05-20 16:01:12,test_invalid_from_city,FAILED,0.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""1ed28e337d9581fbd42ef1d575f0bfee"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.severity(allure.severity_level.MINOR)
+    @allure.title(""TC06 - Invalid FROM city blocks progress"")
+    def test_i"
+2026-05-20 16:01:15,test_cab_count_not_excessive,FAILED,0.01,"driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""d6f913e54fd949faa8cd96ed7fd44b95"")>
+
+    @allure.feature(""Cab Booking"")
+    @allure.story(""Negative Tests"")
+    @allure.severity(allure.severity_level.MINOR)
+    @allure.title(""TC07 - Cab count should not exceed 100"")
+    def test_cab"
+2026-05-20 17:07:53,test_book_cab,FAILED,49.2,"self = <tests.test_cab_booking.TestCabBooking object at 0x0000017576E8AC10>, driver = <selenium.webdriver.chrome.webdriver.WebDriver (session=""88d1cacba97834edf95309cd80eec317"")>
+
+    @allure.title(""Book a cab from Delhi to Agra"")
+    @allure.severity(allure.severity_level.CRITICAL)
+    def test_boo"

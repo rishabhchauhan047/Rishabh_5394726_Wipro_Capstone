@@ -1,0 +1,6 @@
+# Goibibo Automation Project
+
+## Install dependencies
+
+```bash
+pip install -r requirements.txt

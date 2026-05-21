@@ -1,0 +1,103 @@
+[2026-05-19 00:49:38] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-19 00:49:49] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-19 00:49:49] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-19 00:49:56] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-19 00:50:01] [INFO] [CabBookingPage] Entering FROM city: Delhi
+[2026-05-19 00:50:10] [DEBUG] [CabBookingPage] FROM city 'Delhi' selected from suggestions
+[2026-05-19 00:50:10] [INFO] [CabBookingPage] Screenshot saved: screenshots\from_city_Delhi_20260519_005010.png
+[2026-05-19 00:50:13] [INFO] [CabBookingPage] Entering TO city: Agra
+[2026-05-19 00:50:22] [DEBUG] [CabBookingPage] TO city 'Agra' selected from suggestions
+[2026-05-19 00:50:22] [INFO] [CabBookingPage] Screenshot saved: screenshots\to_city_Agra_20260519_005022.png
+[2026-05-19 00:50:25] [INFO] [CabBookingPage] Clicking SEARCH CABS button
+[2026-05-19 00:50:34] [INFO] [CabBookingPage] Search button clicked — waiting for results
+[2026-05-19 00:50:34] [INFO] [CabBookingPage] Screenshot saved: screenshots\search_results_20260519_005034.png
+[2026-05-19 00:50:44] [INFO] [CabBookingPage] Looking for SELECT CAB buttons
+[2026-05-19 00:50:59] [INFO] [CabBookingPage] Cab buttons found: 13
+[2026-05-19 00:50:59] [INFO] [CabBookingPage] First cab selected successfully
+[2026-05-19 00:50:59] [INFO] [CabBookingPage] Screenshot saved: screenshots\cab_selected_20260519_005059.png
+[2026-05-19 00:51:08] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-19 00:51:19] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-19 00:51:19] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-19 00:51:25] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-19 00:51:30] [INFO] [CabBookingPage] Entering FROM city: Mumbai
+[2026-05-19 00:51:39] [DEBUG] [CabBookingPage] FROM city 'Mumbai' selected from suggestions
+[2026-05-19 00:51:39] [INFO] [CabBookingPage] Screenshot saved: screenshots\from_city_Mumbai_20260519_005139.png
+[2026-05-19 00:51:42] [INFO] [CabBookingPage] Entering TO city: Pune
+[2026-05-19 00:51:51] [DEBUG] [CabBookingPage] TO city 'Pune' selected from suggestions
+[2026-05-19 00:51:51] [INFO] [CabBookingPage] Screenshot saved: screenshots\to_city_Pune_20260519_005151.png
+[2026-05-19 00:51:54] [INFO] [CabBookingPage] Clicking SEARCH CABS button
+[2026-05-19 00:52:03] [INFO] [CabBookingPage] Search button clicked — waiting for results
+[2026-05-19 00:52:04] [INFO] [CabBookingPage] Screenshot saved: screenshots\search_results_20260519_005203.png
+[2026-05-19 00:52:14] [INFO] [CabBookingPage] Looking for SELECT CAB buttons
+[2026-05-19 00:52:29] [INFO] [CabBookingPage] Cab buttons found: 16
+[2026-05-19 00:52:29] [INFO] [CabBookingPage] First cab selected successfully
+[2026-05-19 00:52:29] [INFO] [CabBookingPage] Screenshot saved: screenshots\cab_selected_20260519_005229.png
+[2026-05-19 00:52:37] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-19 00:52:48] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-19 00:52:48] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-19 00:52:56] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-19 00:53:01] [INFO] [CabBookingPage] Entering FROM city: Bangalore
+[2026-05-19 00:53:10] [DEBUG] [CabBookingPage] FROM city 'Bangalore' selected from suggestions
+[2026-05-19 00:53:11] [INFO] [CabBookingPage] Screenshot saved: screenshots\from_city_Bangalore_20260519_005310.png
+[2026-05-19 00:53:14] [INFO] [CabBookingPage] Entering TO city: Mysore
+[2026-05-19 00:53:23] [DEBUG] [CabBookingPage] TO city 'Mysore' selected from suggestions
+[2026-05-19 00:53:23] [INFO] [CabBookingPage] Screenshot saved: screenshots\to_city_Mysore_20260519_005323.png
+[2026-05-19 00:53:26] [INFO] [CabBookingPage] Clicking SEARCH CABS button
+[2026-05-19 00:53:35] [INFO] [CabBookingPage] Search button clicked — waiting for results
+[2026-05-19 00:53:35] [INFO] [CabBookingPage] Screenshot saved: screenshots\search_results_20260519_005335.png
+[2026-05-19 00:53:45] [INFO] [CabBookingPage] Looking for SELECT CAB buttons
+[2026-05-19 00:54:00] [INFO] [CabBookingPage] Cab buttons found: 10
+[2026-05-19 00:54:00] [INFO] [CabBookingPage] First cab selected successfully
+[2026-05-19 00:54:00] [INFO] [CabBookingPage] Screenshot saved: screenshots\cab_selected_20260519_005400.png
+[2026-05-19 00:54:08] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-19 00:54:19] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-19 00:54:19] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-19 00:54:32] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-19 00:54:37] [INFO] [CabBookingPage] Entering FROM city: Chennai
+[2026-05-19 00:54:46] [DEBUG] [CabBookingPage] FROM city 'Chennai' selected from suggestions
+[2026-05-19 00:54:46] [INFO] [CabBookingPage] Screenshot saved: screenshots\from_city_Chennai_20260519_005446.png
+[2026-05-19 00:54:49] [INFO] [CabBookingPage] Entering TO city: Pondicherry
+[2026-05-19 00:54:58] [DEBUG] [CabBookingPage] TO city 'Pondicherry' selected from suggestions
+[2026-05-19 00:54:59] [INFO] [CabBookingPage] Screenshot saved: screenshots\to_city_Pondicherry_20260519_005458.png
+[2026-05-19 00:55:02] [INFO] [CabBookingPage] Clicking SEARCH CABS button
+[2026-05-19 00:55:10] [INFO] [CabBookingPage] Search button clicked — waiting for results
+[2026-05-19 00:55:10] [INFO] [CabBookingPage] Screenshot saved: screenshots\search_results_20260519_005510.png
+[2026-05-19 00:55:20] [INFO] [CabBookingPage] Looking for SELECT CAB buttons
+[2026-05-19 00:55:35] [INFO] [CabBookingPage] Cab buttons found: 9
+[2026-05-19 00:55:35] [INFO] [CabBookingPage] First cab selected successfully
+[2026-05-19 00:55:35] [INFO] [CabBookingPage] Screenshot saved: screenshots\cab_selected_20260519_005535.png
+[2026-05-19 00:55:43] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-19 00:55:54] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-19 00:55:54] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-19 00:56:07] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-19 00:56:12] [INFO] [CabBookingPage] Entering FROM city: Hyderabad
+[2026-05-19 00:56:21] [DEBUG] [CabBookingPage] FROM city 'Hyderabad' selected from suggestions
+[2026-05-19 00:56:21] [INFO] [CabBookingPage] Screenshot saved: screenshots\from_city_Hyderabad_20260519_005621.png
+[2026-05-19 00:56:24] [INFO] [CabBookingPage] Entering TO city: Vijayawada
+[2026-05-19 00:56:33] [DEBUG] [CabBookingPage] TO city 'Vijayawada' selected from suggestions
+[2026-05-19 00:56:33] [INFO] [CabBookingPage] Screenshot saved: screenshots\to_city_Vijayawada_20260519_005633.png
+[2026-05-19 00:56:36] [INFO] [CabBookingPage] Clicking SEARCH CABS button
+[2026-05-19 00:56:44] [INFO] [CabBookingPage] Search button clicked — waiting for results
+[2026-05-19 00:56:45] [INFO] [CabBookingPage] Screenshot saved: screenshots\search_results_20260519_005644.png
+[2026-05-19 00:56:55] [INFO] [CabBookingPage] Looking for SELECT CAB buttons
+[2026-05-19 00:57:10] [INFO] [CabBookingPage] Cab buttons found: 9
+[2026-05-19 00:57:10] [INFO] [CabBookingPage] First cab selected successfully
+[2026-05-19 00:57:10] [INFO] [CabBookingPage] Screenshot saved: screenshots\cab_selected_20260519_005710.png
+[2026-05-19 00:57:18] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-19 00:57:28] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-19 00:57:28] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-19 00:57:35] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-19 00:57:40] [INFO] [CabBookingPage] Entering FROM city: XYZABC123
+[2026-05-19 00:58:07] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
+[2026-05-19 00:58:18] [DEBUG] [CabBookingPage] Page loaded, window maximised
+[2026-05-19 00:58:18] [DEBUG] [CabBookingPage] No popup found, continuing
+[2026-05-19 00:58:26] [INFO] [CabBookingPage] Cabs menu clicked
+[2026-05-19 00:58:31] [INFO] [CabBookingPage] Entering FROM city: Delhi
+[2026-05-19 00:58:40] [DEBUG] [CabBookingPage] FROM city 'Delhi' selected from suggestions
+[2026-05-19 00:58:40] [INFO] [CabBookingPage] Screenshot saved: screenshots\from_city_Delhi_20260519_005840.png
+[2026-05-19 00:58:43] [INFO] [CabBookingPage] Entering TO city: Agra
+[2026-05-19 00:58:52] [DEBUG] [CabBookingPage] TO city 'Agra' selected from suggestions
+[2026-05-19 00:58:52] [INFO] [CabBookingPage] Screenshot saved: screenshots\to_city_Agra_20260519_005852.png
+[2026-05-19 00:58:55] [INFO] [CabBookingPage] Clicking SEARCH CABS button
+[2026-05-19 00:59:03] [INFO] [CabBookingPage] Search button clicked — waiting for results
+[2026-05-19 00:59:03] [INFO] [CabBookingPage] Screenshot saved: screenshots\search_results_20260519_005903.png

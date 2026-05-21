@@ -1,0 +1,30 @@
+[2026-05-19 00:49:37] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-19 00:49:38] [INFO] [conftest] Chrome launched successfully
+[2026-05-19 00:51:04] [INFO] [conftest] [CSV] test_cab_booking_delhi_to_agra → PASSED (86.64s)
+[2026-05-19 00:51:04] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-19 00:51:07] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-19 00:51:08] [INFO] [conftest] Chrome launched successfully
+[2026-05-19 00:52:34] [INFO] [conftest] [CSV] test_cab_booking_mumbai_to_pune → PASSED (86.07s)
+[2026-05-19 00:52:34] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-19 00:52:36] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-19 00:52:37] [INFO] [conftest] Chrome launched successfully
+[2026-05-19 00:54:05] [INFO] [conftest] [CSV] test_cab_booking_bangalore_to_mysore → PASSED (88.18s)
+[2026-05-19 00:54:05] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-19 00:54:07] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-19 00:54:08] [INFO] [conftest] Chrome launched successfully
+[2026-05-19 00:55:40] [INFO] [conftest] [CSV] test_cab_booking_chennai_to_pondicherry → PASSED (92.12s)
+[2026-05-19 00:55:40] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-19 00:55:42] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-19 00:55:43] [INFO] [conftest] Chrome launched successfully
+[2026-05-19 00:57:15] [INFO] [conftest] [CSV] test_cab_booking_hyderabad_to_vijayawada → PASSED (92.07s)
+[2026-05-19 00:57:15] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-19 00:57:17] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-19 00:57:18] [INFO] [conftest] Chrome launched successfully
+[2026-05-19 00:58:05] [ERROR] [conftest] FAILED — screenshot saved: screenshots/FAILED_test_cab_booking_invalid_from_city_20260519_005805.png
+[2026-05-19 00:58:05] [INFO] [conftest] [CSV] test_cab_booking_invalid_from_city → FAILED (46.59s)
+[2026-05-19 00:58:05] [INFO] [conftest] === Tearing down Chrome WebDriver ===
+[2026-05-19 00:58:07] [INFO] [conftest] === Setting up Chrome WebDriver ===
+[2026-05-19 00:58:07] [INFO] [conftest] Chrome launched successfully
+[2026-05-19 00:59:13] [ERROR] [conftest] FAILED — screenshot saved: screenshots/FAILED_test_cab_count_exceeds_100_20260519_005913.png
+[2026-05-19 00:59:13] [INFO] [conftest] [CSV] test_cab_count_exceeds_100 → FAILED (65.83s)
+[2026-05-19 00:59:13] [INFO] [conftest] === Tearing down Chrome WebDriver ===

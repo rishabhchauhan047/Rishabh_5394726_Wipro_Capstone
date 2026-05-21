@@ -1,0 +1,1 @@
+Positive test passed: Pickup city selected as Delhi.
