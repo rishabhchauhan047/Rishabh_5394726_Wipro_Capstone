@@ -1,5 +1,0 @@
-selenium
-pytest
-pytest-html
-allure-pytest
-webdriver-manager
