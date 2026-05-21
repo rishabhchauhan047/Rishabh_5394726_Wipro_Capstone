@@ -1,1 +1,0 @@
-Bug observation: Search results appeared even when pickup location was empty.

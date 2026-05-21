@@ -1,9 +1,0 @@
-[2026-05-20 15:53:36] [INFO] [conftest] === Setting up Chrome WebDriver ===
-[2026-05-20 15:53:36] [INFO] [conftest] Chrome launched successfully
-[2026-05-20 15:53:36] [INFO] [test_cab_booking] === TEST START: test_cab_booking_delhi_to_agra ===
-[2026-05-20 15:53:36] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
-[2026-05-20 15:53:52] [INFO] [CabBookingPage] Cabs menu clicked
-[2026-05-20 15:53:57] [INFO] [CabBookingPage] Entering FROM city: Delhi
-[2026-05-20 15:54:22] [ERROR] [conftest] FAILED — screenshot saved: screenshots/FAILED_test_cab_booking_delhi_to_agra_20260520_155421.png
-[2026-05-20 15:54:22] [INFO] [conftest] [CSV] test_cab_booking_delhi_to_agra → FAILED (44.76s)
-[2026-05-20 15:54:22] [INFO] [conftest] === Tearing down Chrome WebDriver ===

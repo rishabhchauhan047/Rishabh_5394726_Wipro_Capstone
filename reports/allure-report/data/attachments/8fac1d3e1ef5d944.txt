@@ -1,1 +1,0 @@
-Parameterized filter test passed: Bangalore to Mysore with SUV cab type filter.

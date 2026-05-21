@@ -1,6 +1,0 @@
-[32mINFO    [0m CabBookingPage:base_page.py:103 Opening Goibibo Cabs page directly
-[32mINFO    [0m CabBookingPage:base_page.py:103 Checking and closing popups if present
-[32mINFO    [0m CabBookingPage:base_page.py:134 Screenshot captured: screenshots\01_cabs_page_direct.png
-[32mINFO    [0m CabBookingPage:base_page.py:103 Checking and closing popups if present
-[32mINFO    [0m CabBookingPage:base_page.py:134 Screenshot captured: screenshots\tc01_positive_cabs_page_opened.png
-[32mINFO    [0m CabBookingPage:base_page.py:103 Positive test passed: Cabs page opened successfully.

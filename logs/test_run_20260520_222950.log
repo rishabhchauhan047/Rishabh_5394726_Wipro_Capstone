@@ -1,8 +1,0 @@
-[2026-05-20 22:29:51] [INFO] [test_cab_booking] === TEST START: test_end_to_end_booking ===
-[2026-05-20 22:29:55] [INFO] [test_cab_booking] === TEST START: test_filter_hatchback ===
-[2026-05-20 22:29:58] [INFO] [test_cab_booking] === TEST START: test_filter_sedan ===
-[2026-05-20 22:30:01] [INFO] [test_cab_booking] === TEST START: test_filter_suv ===
-[2026-05-20 22:30:05] [INFO] [test_cab_booking] === TEST START: test_filter_clear_all ===
-[2026-05-20 22:30:08] [INFO] [test_cab_booking] === TEST START: test_filter_hatchback_and_sedan ===
-[2026-05-20 22:30:11] [INFO] [test_cab_booking] === TEST START: test_invalid_city ===
-[2026-05-20 22:30:14] [INFO] [test_cab_booking] === TEST START: test_suv_count_exceeds_100 ===

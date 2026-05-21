@@ -1,8 +1,0 @@
-[2026-05-20 15:53:36] [INFO] [test_cab_booking] === TEST START: test_cab_booking_delhi_to_agra ===
-[2026-05-20 15:53:36] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/
-[2026-05-20 15:53:47] [DEBUG] [CabBookingPage] Page loaded, window maximised
-[2026-05-20 15:53:47] [DEBUG] [CabBookingPage] No popup found, continuing
-[2026-05-20 15:53:52] [INFO] [CabBookingPage] Cabs menu clicked
-[2026-05-20 15:53:57] [INFO] [CabBookingPage] Entering FROM city: Delhi
-[2026-05-20 15:54:24] [INFO] [test_cab_booking] === TEST START: test_cab_booking_mumbai_to_pune ===
-[2026-05-20 15:54:24] [INFO] [CabBookingPage] Navigating to https://www.goibibo.com/cars/

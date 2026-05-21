@@ -1,4 +1,0 @@
-[2026-05-20 17:07:01] [INFO] [conftest] === Starting Chrome WebDriver ===
-[2026-05-20 17:07:53] [ERROR] [conftest] Test FAILED — screenshot: screenshots/FAILED_test_book_cab_20260520_170753.png
-[2026-05-20 17:07:53] [INFO] [conftest] [CSV] test_book_cab → FAILED (49.2s)
-[2026-05-20 17:07:53] [INFO] [conftest] === Closing Chrome WebDriver ===

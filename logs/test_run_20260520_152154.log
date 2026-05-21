@@ -1,7 +1,0 @@
-[2026-05-20 15:21:55] [INFO] [conftest] === Setting up Chrome WebDriver ===
-[2026-05-20 15:21:55] [INFO] [conftest] Chrome launched successfully
-[2026-05-20 15:22:23] [ERROR] [conftest] FAILED — screenshot saved: screenshots/FAILED_test_filter_hatchback_20260520_152223.png
-[2026-05-20 15:22:23] [INFO] [conftest] [CSV] test_filter_hatchback → FAILED (28.01s)
-[2026-05-20 15:22:23] [INFO] [conftest] === Tearing down Chrome WebDriver ===
-[2026-05-20 15:22:26] [INFO] [conftest] === Setting up Chrome WebDriver ===
-[2026-05-20 15:22:27] [INFO] [conftest] Chrome launched successfully

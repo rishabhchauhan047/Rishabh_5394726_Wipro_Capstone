@@ -1,1 +1,0 @@
-Positive test passed: Passenger details were filled. Final booking/payment was not submitted.
