@@ -1,0 +1,300 @@
+2026-05-21 16:59:10,491 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 16:59:15,236 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 16:59:15,502 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 16:59:15,502 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 16:59:15,695 | INFO | CabBookingPage | Screenshot captured: screenshots\tc01_positive_cabs_page_opened.png
+2026-05-21 16:59:15,704 | INFO | CabBookingPage | Positive test passed: Cabs page opened successfully.
+2026-05-21 16:59:19,851 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 16:59:24,683 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 16:59:25,006 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 16:59:25,006 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 16:59:25,060 | INFO | CabBookingPage | Selecting From city: Delhi
+2026-05-21 16:59:43,482 | INFO | CabBookingPage | Screenshot captured: screenshots\tc02_positive_pickup_city_selected.png
+2026-05-21 16:59:43,495 | INFO | CabBookingPage | Positive test passed: Pickup city selected as Delhi.
+2026-05-21 16:59:46,793 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 16:59:52,102 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 16:59:52,334 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 16:59:52,334 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 16:59:52,399 | INFO | CabBookingPage | Selecting From city: Delhi
+2026-05-21 17:00:10,997 | INFO | CabBookingPage | Screenshot captured: screenshots\tc03_positive_pickup_city_selected.png
+2026-05-21 17:00:10,998 | INFO | CabBookingPage | Selecting To city: Agra
+2026-05-21 17:00:28,797 | INFO | CabBookingPage | Screenshot captured: screenshots\tc03_positive_destination_city_selected.png
+2026-05-21 17:00:28,803 | INFO | CabBookingPage | Positive test passed: Route selected as Delhi to Agra.
+2026-05-21 17:00:32,088 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:00:37,278 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:00:37,545 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:00:37,545 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:00:37,597 | INFO | CabBookingPage | Selecting From city: Delhi
+2026-05-21 17:00:55,893 | INFO | CabBookingPage | Screenshot captured: screenshots\tc04_positive_from_city_selected.png
+2026-05-21 17:00:55,894 | INFO | CabBookingPage | Selecting To city: Agra
+2026-05-21 17:01:13,682 | INFO | CabBookingPage | Screenshot captured: screenshots\tc04_positive_to_city_selected.png
+2026-05-21 17:01:13,683 | INFO | CabBookingPage | Opening pickup time picker and applying default time
+2026-05-21 17:01:40,587 | WARNING | CabBookingPage | Could not click Apply time. Last error: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff781b97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff781b97e50+14900]
+	chromedriver!(No symbol) [0x7ff7818fd5ad]
+	chromedriver!(No symbol) [0x7ff781957822]
+	chromedriver!(No symbol) [0x7ff781957b2c]
+	chromedriver!(No symbol) [0x7ff7819a7d17]
+	chromedriver!(No symbol) [0x7ff7819a486f]
+	chromedriver!(No symbol) [0x7ff781949df8]
+	chromedriver!(No symbol) [0x7ff78194ace3]
+	chromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]
+
+2026-05-21 17:01:40,680 | INFO | CabBookingPage | Screenshot captured: screenshots\tc04_positive_search_form_filled.png
+2026-05-21 17:01:40,680 | INFO | CabBookingPage | Clicking Search Cabs
+2026-05-21 17:01:48,619 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:01:49,273 | INFO | CabBookingPage | Screenshot captured: screenshots\tc04_positive_cab_results.png
+2026-05-21 17:01:49,285 | INFO | CabBookingPage | Positive test passed: Cab search results were displayed.
+2026-05-21 17:01:52,733 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:01:57,464 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:01:57,696 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:01:57,696 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:01:57,873 | INFO | CabBookingPage | Screenshot captured: screenshots\tc05_positive_01_cabs_page.png
+2026-05-21 17:01:57,874 | INFO | CabBookingPage | Selecting From city: Delhi
+2026-05-21 17:02:15,686 | INFO | CabBookingPage | Screenshot captured: screenshots\tc05_positive_02_from_city_selected.png
+2026-05-21 17:02:15,686 | INFO | CabBookingPage | Selecting To city: Agra
+2026-05-21 17:02:33,740 | INFO | CabBookingPage | Screenshot captured: screenshots\tc05_positive_03_to_city_selected.png
+2026-05-21 17:02:33,741 | INFO | CabBookingPage | Opening pickup time picker and applying default time
+2026-05-21 17:03:00,945 | WARNING | CabBookingPage | Could not click Apply time. Last error: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff781b97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff781b97e50+14900]
+	chromedriver!(No symbol) [0x7ff7818fd5ad]
+	chromedriver!(No symbol) [0x7ff781957822]
+	chromedriver!(No symbol) [0x7ff781957b2c]
+	chromedriver!(No symbol) [0x7ff7819a7d17]
+	chromedriver!(No symbol) [0x7ff7819a486f]
+	chromedriver!(No symbol) [0x7ff781949df8]
+	chromedriver!(No symbol) [0x7ff78194ace3]
+	chromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]
+
+2026-05-21 17:03:01,018 | INFO | CabBookingPage | Screenshot captured: screenshots\tc05_positive_04_search_form_filled.png
+2026-05-21 17:03:01,018 | INFO | CabBookingPage | Clicking Search Cabs
+2026-05-21 17:03:09,135 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:03:09,315 | INFO | CabBookingPage | Screenshot captured: screenshots\tc05_positive_05_cab_results.png
+2026-05-21 17:03:09,315 | INFO | CabBookingPage | Selecting first available cab
+2026-05-21 17:03:13,610 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:03:13,773 | INFO | CabBookingPage | Screenshot captured: screenshots\tc05_positive_06_trip_details_page.png
+2026-05-21 17:03:13,773 | INFO | CabBookingPage | Entering passenger name, mobile number, and email
+2026-05-21 17:03:20,372 | INFO | CabBookingPage | Screenshot captured: screenshots\tc05_positive_07_passenger_details_filled.png
+2026-05-21 17:03:20,382 | INFO | CabBookingPage | Positive test passed: Passenger details were filled. Final booking/payment was not submitted.
+2026-05-21 17:03:23,730 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:03:28,514 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:03:28,754 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:03:28,754 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:03:28,813 | INFO | CabBookingPage | Selecting From city: Delhi
+2026-05-21 17:03:46,418 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_delhi_agra_hatchback_01_from_selected.png
+2026-05-21 17:03:46,418 | INFO | CabBookingPage | Selecting To city: Agra
+2026-05-21 17:04:03,973 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_delhi_agra_hatchback_02_to_selected.png
+2026-05-21 17:04:03,973 | INFO | CabBookingPage | Opening pickup time picker and applying default time
+2026-05-21 17:04:31,184 | WARNING | CabBookingPage | Could not click Apply time. Last error: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff781b97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff781b97e50+14900]
+	chromedriver!(No symbol) [0x7ff7818fd5ad]
+	chromedriver!(No symbol) [0x7ff781957822]
+	chromedriver!(No symbol) [0x7ff781957b2c]
+	chromedriver!(No symbol) [0x7ff7819a7d17]
+	chromedriver!(No symbol) [0x7ff7819a486f]
+	chromedriver!(No symbol) [0x7ff781949df8]
+	chromedriver!(No symbol) [0x7ff78194ace3]
+	chromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]
+
+2026-05-21 17:04:31,280 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_delhi_agra_hatchback_03_search_form.png
+2026-05-21 17:04:31,280 | INFO | CabBookingPage | Clicking Search Cabs
+2026-05-21 17:04:39,190 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:04:39,325 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_delhi_agra_hatchback_04_results_before_filter.png
+2026-05-21 17:04:39,326 | INFO | CabBookingPage | Selecting Cab Type filter: Hatchback
+2026-05-21 17:04:41,442 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_delhi_agra_hatchback_05_filter_applied.png
+2026-05-21 17:04:41,451 | INFO | CabBookingPage | Parameterized filter test passed: Delhi to Agra with Hatchback cab type filter.
+2026-05-21 17:04:44,761 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:04:49,635 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:04:49,944 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:04:49,945 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:04:50,015 | INFO | CabBookingPage | Selecting From city: Mumbai
+2026-05-21 17:05:08,000 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_mumbai_pune_sedan_01_from_selected.png
+2026-05-21 17:05:08,001 | INFO | CabBookingPage | Selecting To city: Pune
+2026-05-21 17:05:26,524 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_mumbai_pune_sedan_02_to_selected.png
+2026-05-21 17:05:26,524 | INFO | CabBookingPage | Opening pickup time picker and applying default time
+2026-05-21 17:05:53,322 | WARNING | CabBookingPage | Could not click Apply time. Last error: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff781b97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff781b97e50+14900]
+	chromedriver!(No symbol) [0x7ff7818fd5ad]
+	chromedriver!(No symbol) [0x7ff781957822]
+	chromedriver!(No symbol) [0x7ff781957b2c]
+	chromedriver!(No symbol) [0x7ff7819a7d17]
+	chromedriver!(No symbol) [0x7ff7819a486f]
+	chromedriver!(No symbol) [0x7ff781949df8]
+	chromedriver!(No symbol) [0x7ff78194ace3]
+	chromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]
+
+2026-05-21 17:05:53,393 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_mumbai_pune_sedan_03_search_form.png
+2026-05-21 17:05:53,393 | INFO | CabBookingPage | Clicking Search Cabs
+2026-05-21 17:06:01,344 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:06:01,482 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_mumbai_pune_sedan_04_results_before_filter.png
+2026-05-21 17:06:01,482 | INFO | CabBookingPage | Selecting Cab Type filter: Sedan
+2026-05-21 17:06:03,579 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_mumbai_pune_sedan_05_filter_applied.png
+2026-05-21 17:06:03,587 | INFO | CabBookingPage | Parameterized filter test passed: Mumbai to Pune with Sedan cab type filter.
+2026-05-21 17:06:06,859 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:06:11,707 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:06:11,924 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:06:11,925 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:06:11,977 | INFO | CabBookingPage | Selecting From city: Bangalore
+2026-05-21 17:06:30,036 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_bangalore_mysore_suv_01_from_selected.png
+2026-05-21 17:06:30,036 | INFO | CabBookingPage | Selecting To city: Mysore
+2026-05-21 17:06:47,779 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_bangalore_mysore_suv_02_to_selected.png
+2026-05-21 17:06:47,779 | INFO | CabBookingPage | Opening pickup time picker and applying default time
+2026-05-21 17:07:15,096 | WARNING | CabBookingPage | Could not click Apply time. Last error: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff781b97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff781b97e50+14900]
+	chromedriver!(No symbol) [0x7ff7818fd5ad]
+	chromedriver!(No symbol) [0x7ff781957822]
+	chromedriver!(No symbol) [0x7ff781957b2c]
+	chromedriver!(No symbol) [0x7ff7819a7d17]
+	chromedriver!(No symbol) [0x7ff7819a486f]
+	chromedriver!(No symbol) [0x7ff781949df8]
+	chromedriver!(No symbol) [0x7ff78194ace3]
+	chromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]
+
+2026-05-21 17:07:15,182 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_bangalore_mysore_suv_03_search_form.png
+2026-05-21 17:07:15,182 | INFO | CabBookingPage | Clicking Search Cabs
+2026-05-21 17:07:22,938 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:07:23,137 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_bangalore_mysore_suv_04_results_before_filter.png
+2026-05-21 17:07:23,137 | INFO | CabBookingPage | Selecting Cab Type filter: SUV
+2026-05-21 17:07:25,261 | INFO | CabBookingPage | Screenshot captured: screenshots\tc_filter_bangalore_mysore_suv_05_filter_applied.png
+2026-05-21 17:07:25,272 | INFO | CabBookingPage | Parameterized filter test passed: Bangalore to Mysore with SUV cab type filter.
+2026-05-21 17:07:28,617 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:07:33,466 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:07:33,693 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:07:33,693 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:07:33,746 | INFO | CabBookingPage | Selecting From city: Delhi
+2026-05-21 17:07:51,661 | INFO | CabBookingPage | Screenshot captured: screenshots\tc06_negative_same_route_from_selected.png
+2026-05-21 17:07:51,661 | INFO | CabBookingPage | Selecting To city: Delhi
+2026-05-21 17:08:09,861 | INFO | CabBookingPage | Screenshot captured: screenshots\tc06_negative_same_route_to_selected.png
+2026-05-21 17:08:09,861 | INFO | CabBookingPage | Opening pickup time picker and applying default time
+2026-05-21 17:08:36,951 | WARNING | CabBookingPage | Could not click Apply time. Last error: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff781b97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff781b97e50+14900]
+	chromedriver!(No symbol) [0x7ff7818fd5ad]
+	chromedriver!(No symbol) [0x7ff781957822]
+	chromedriver!(No symbol) [0x7ff781957b2c]
+	chromedriver!(No symbol) [0x7ff7819a7d17]
+	chromedriver!(No symbol) [0x7ff7819a486f]
+	chromedriver!(No symbol) [0x7ff781949df8]
+	chromedriver!(No symbol) [0x7ff78194ace3]
+	chromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]
+
+2026-05-21 17:08:40,161 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:08:40,349 | INFO | CabBookingPage | Screenshot captured: screenshots\tc06_negative_same_route_after_search.png
+2026-05-21 17:08:40,353 | WARNING | CabBookingPage | Bug observation: Search results appeared even when pickup and destination were the same.
+2026-05-21 17:08:43,632 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:08:48,899 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:08:49,181 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:08:49,182 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:08:49,428 | INFO | CabBookingPage | Screenshot captured: screenshots\tc07_negative_empty_pickup_initial_form.png
+2026-05-21 17:08:49,428 | INFO | CabBookingPage | Selecting To city: Agra
+2026-05-21 17:09:07,149 | INFO | CabBookingPage | Screenshot captured: screenshots\tc07_negative_empty_pickup_destination_selected.png
+2026-05-21 17:09:10,357 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:09:10,656 | INFO | CabBookingPage | Screenshot captured: screenshots\tc07_negative_empty_pickup_after_search.png
+2026-05-21 17:09:10,661 | WARNING | CabBookingPage | Bug observation: Search results appeared even when pickup location was empty.
+2026-05-21 17:09:13,905 | INFO | CabBookingPage | Opening Goibibo Cabs page directly
+2026-05-21 17:09:19,009 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:09:19,269 | INFO | CabBookingPage | Screenshot captured: screenshots\01_cabs_page_direct.png
+2026-05-21 17:09:19,269 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:09:19,488 | INFO | CabBookingPage | Screenshot captured: screenshots\tc08_e2e_01_cabs_page_opened.png
+2026-05-21 17:09:19,488 | INFO | CabBookingPage | Selecting From city: Delhi
+2026-05-21 17:09:37,327 | INFO | CabBookingPage | Screenshot captured: screenshots\tc08_e2e_02_pickup_city_selected.png
+2026-05-21 17:09:37,327 | INFO | CabBookingPage | Selecting To city: Agra
+2026-05-21 17:09:55,126 | INFO | CabBookingPage | Screenshot captured: screenshots\tc08_e2e_03_destination_city_selected.png
+2026-05-21 17:09:55,126 | INFO | CabBookingPage | Opening pickup time picker and applying default time
+2026-05-21 17:10:22,428 | WARNING | CabBookingPage | Could not click Apply time. Last error: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff781b97de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff781b97e50+14900]
+	chromedriver!(No symbol) [0x7ff7818fd5ad]
+	chromedriver!(No symbol) [0x7ff781957822]
+	chromedriver!(No symbol) [0x7ff781957b2c]
+	chromedriver!(No symbol) [0x7ff7819a7d17]
+	chromedriver!(No symbol) [0x7ff7819a486f]
+	chromedriver!(No symbol) [0x7ff781949df8]
+	chromedriver!(No symbol) [0x7ff78194ace3]
+	chromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]
+	ntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]
+
+2026-05-21 17:10:22,523 | INFO | CabBookingPage | Screenshot captured: screenshots\tc08_e2e_04_search_form_ready.png
+2026-05-21 17:10:22,523 | INFO | CabBookingPage | Clicking Search Cabs
+2026-05-21 17:10:29,670 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:10:29,813 | INFO | CabBookingPage | Screenshot captured: screenshots\tc08_e2e_05_cab_results_displayed.png
+2026-05-21 17:10:29,816 | INFO | CabBookingPage | Selecting first available cab
+2026-05-21 17:10:34,035 | INFO | CabBookingPage | Checking and closing popups if present
+2026-05-21 17:10:34,191 | INFO | CabBookingPage | Screenshot captured: screenshots\tc08_e2e_06_cab_selected_trip_details.png
+2026-05-21 17:10:34,191 | INFO | CabBookingPage | Entering passenger name, mobile number, and email
+2026-05-21 17:10:40,443 | INFO | CabBookingPage | Screenshot captured: screenshots\tc08_e2e_07_passenger_details_entered.png
+2026-05-21 17:10:40,455 | INFO | CabBookingPage | End-to-end test passed: Cab search, cab selection, and passenger details entry completed.

@@ -1,0 +1,1 @@
+Positive test passed: Cab search results were displayed.

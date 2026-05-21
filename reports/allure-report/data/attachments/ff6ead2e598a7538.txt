@@ -1,0 +1,1 @@
+Bug observation: Search results appeared even when pickup and destination were the same.
