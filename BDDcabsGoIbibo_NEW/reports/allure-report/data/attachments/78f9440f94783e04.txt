@@ -1,0 +1,67 @@
+2026-05-23 21:11:23,347 [INFO] root - Starting scenario: End to end one-way cab UPI QR flow for Delhi to Agra
+2026-05-23 21:11:25,735 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:11:25,736 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:11:28,732 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:11:29,011 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:11:29,840 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:11:29,841 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:11:31,776 [INFO] HomePage - Selecting city. Query=Agra, expected suggestion=Agra, Uttar Pradesh, India
+2026-05-23 21:11:33,583 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Agra, Uttar Pradesh, India agra
+2026-05-23 21:11:34,179 [INFO] HomePage - Selected pickup date: 2026-05-24
+2026-05-23 21:11:34,787 [INFO] HomePage - Selected pickup time: 10:00 AM
+2026-05-23 21:11:34,787 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:11:39,844 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:11:39,969 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:11:40,747 [INFO] SearchResultsPage - Cab results are displayed with 10 selectable cabs.
+2026-05-23 21:11:40,782 [INFO] SearchResultsPage - Applying listing filter: Hatchback
+(2)
+2026-05-23 21:11:42,363 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Hatchback', 'expected_result_text': 'HATCHBACK', 'applied': True, 'label': 'Hatchback\n(2)', 'result_text_present': False}
+2026-05-23 21:11:42,388 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:11:42,401 [INFO] SearchResultsPage - Applying listing filter: Cng
+(3)
+2026-05-23 21:11:44,148 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Cng', 'expected_result_text': 'CNG', 'applied': True, 'label': 'Cng\n(3)', 'result_text_present': False}
+2026-05-23 21:11:44,149 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:11:44,282 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:11:44,370 [INFO] SearchResultsPage - Cab results are displayed with 4 selectable cabs.
+2026-05-23 21:11:44,370 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:11:44,479 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:11:44,551 [INFO] SearchResultsPage - Cab results are displayed with 4 selectable cabs.
+2026-05-23 21:11:44,777 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Hatchback', 'expected_result_text': 'HATCHBACK', 'result_text_present': False}, {'filter': 'Cng', 'expected_result_text': 'CNG', 'result_text_present': False}]
+2026-05-23 21:11:44,822 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:11:44,912 [INFO] root - STEP START: When the user selects a cab matching "WagonR, Swift"
+2026-05-23 21:11:44,964 [INFO] SearchResultsPage - Cab results are displayed with 4 selectable cabs.
+2026-05-23 21:11:45,053 [INFO] SearchResultsPage - Selecting cab card: WagonR, Swift | or similar | 4.4/5 | AC | 4 Seats | 16% off  | ₹ 2,835 | ₹ 2,394 | + ₹609 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:11:45,966 [INFO] root - STEP END: When the user selects a cab matching "WagonR, Swift" -> passed
+2026-05-23 21:11:46,081 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:11:46,629 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:11:46,630 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:11:46,747 [INFO] root - STEP START: When the user fills anonymous traveller details
+2026-05-23 21:11:46,785 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:12:01,622 [INFO] ReviewPage - Selected exact pickup location suggestion: India Gate, New Delhi, Delhi, India
+2026-05-23 21:12:05,055 [INFO] ReviewPage - Filled pickup and anonymous traveller details: pickup=India Gate, New Delhi, Delhi, India, name=Anonymous Traveller, mobile=9876543210, email=anonymous.traveller@test.com
+2026-05-23 21:12:05,056 [INFO] root - STEP END: When the user fills anonymous traveller details -> passed
+2026-05-23 21:12:05,138 [INFO] root - STEP START: Then the anonymous traveller details should remain filled
+2026-05-23 21:12:05,235 [INFO] ReviewPage - Anonymous traveller details remain filled.
+2026-05-23 21:12:05,236 [INFO] root - STEP END: Then the anonymous traveller details should remain filled -> passed
+2026-05-23 21:12:05,317 [INFO] root - STEP START: When the user continues to payment
+2026-05-23 21:12:05,342 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:12:05,644 [INFO] ReviewPage - Clicked PAY NOW to continue to payment page.
+2026-05-23 21:12:11,679 [INFO] root - STEP END: When the user continues to payment -> passed
+2026-05-23 21:12:11,818 [INFO] root - STEP START: And the user selects UPI payment option
+2026-05-23 21:12:12,928 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,321 [INFO] PaymentPage - UPI payment option is selected or already active.
+2026-05-23 21:12:13,321 [INFO] root - STEP END: And the user selects UPI payment option -> passed
+2026-05-23 21:12:13,412 [INFO] root - STEP START: And the user clicks Generate QR
+2026-05-23 21:12:13,456 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,523 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,994 [INFO] PaymentPage - UPI payment option is selected or already active.
+2026-05-23 21:12:14,342 [INFO] PaymentPage - Clicked UPI QR action button: VIEW QR
+2026-05-23 21:12:15,479 [INFO] PaymentPage - UPI QR payment request is displayed.
+2026-05-23 21:12:15,479 [INFO] root - STEP END: And the user clicks Generate QR -> passed
+2026-05-23 21:12:15,572 [INFO] root - STEP START: Then the UPI QR payment request should be displayed
+2026-05-23 21:12:15,617 [INFO] PaymentPage - UPI QR payment request is displayed.
+2026-05-23 21:12:15,618 [INFO] root - STEP END: Then the UPI QR payment request should be displayed -> passed
+2026-05-23 21:12:15,696 [INFO] root - STEP START: And no actual payment should be completed
+2026-05-23 21:12:15,729 [INFO] PaymentPage - No actual payment was completed; test stopped at QR request.
+2026-05-23 21:12:15,729 [INFO] root - STEP END: And no actual payment should be completed -> passed
+2026-05-23 21:12:15,808 [INFO] root - Finished scenario: End to end one-way cab UPI QR flow for Delhi to Agra with status Status.passed

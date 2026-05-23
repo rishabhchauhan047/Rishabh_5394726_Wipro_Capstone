@@ -1,0 +1,8 @@
+Step: Given the user opens the Goibibo cab booking page
+Status: PASSED
+Current URL: https://www.goibibo.com/cars/
+
+Execution log:
+2026-05-23 21:12:19,341 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:12:19,341 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:12:22,685 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed

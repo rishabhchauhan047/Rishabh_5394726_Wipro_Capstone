@@ -1,0 +1,14 @@
+Step: When the user searches one-way cabs
+Status: PASSED
+Current URL: https://www.goibibo.com/cabs/listing?fromCity=%7B%22latitude%22%3A28.6139298%2C%22longitude%22%3A77.2088282%2C%22pincode%22%3Anull%2C%22place_id%22%3A%22ChIJLbZ-NFv9DDkRzk0gTkm3wlI%22%2C%22city%22%3A%22NCR%22%2C%22google_city%22%3A%22New%20Delhi%22%2C%22state%22%3A%22Delhi%22%2C%22country%22%3A%22India%22%2C%22country_code%22%3A%22IN%22%2C%22is_city%22%3Atrue%2C%22is_airport%22%3Afalse%2C%22google_address%22%3A%22New%20Delhi%2C%20Delhi%2C%20India%22%2C%22address%22%3A%22New%20Delhi%2C%20Delhi%2C%20India%22%7D&toCity=%7B%22latitude%22%3A27.1766701%2C%22longitude%22%3A78.00807449999999%2C%22pincode%22%3Anull%2C%22place_id%22%3A%22ChIJ2UEvfIUNdDkRQjtSqTjvSng%22%2C%22city%22%3A%22agra%22%2C%22google_city%22%3A%22Agra%20Division%22%2C%22state%22%3A%22Uttar%20Pradesh%22%2C%22country%22%3A%22India%22%2C%22country_code%22%3A%22IN%22%2C%22is_city%22%3Atrue%2C%22google_address%22%3A%22Agra%2C%20Uttar%20Pradesh%2C%20India%22%2C%22address%22%3A%22Agra%2C%20Uttar%20Pradesh%2C%20India%22%7D&tripType=OW&departDate=24-05-2026&pickupTime=10:00&intlFlow=false&returnDate=25-05-2026&dropTime=12:00
+
+Execution log:
+2026-05-23 21:11:29,011 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:11:29,840 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:11:29,841 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:11:31,776 [INFO] HomePage - Selecting city. Query=Agra, expected suggestion=Agra, Uttar Pradesh, India
+2026-05-23 21:11:33,583 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Agra, Uttar Pradesh, India agra
+2026-05-23 21:11:34,179 [INFO] HomePage - Selected pickup date: 2026-05-24
+2026-05-23 21:11:34,787 [INFO] HomePage - Selected pickup time: 10:00 AM
+2026-05-23 21:11:34,787 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:11:39,844 [INFO] root - STEP END: When the user searches one-way cabs -> passed

@@ -1,0 +1,16 @@
+Step: Then the negative outcome "unselected invalid drop city" should be recorded
+Status: PASSED
+Current URL: https://www.goibibo.com/cars/
+
+Execution log:
+2026-05-23 21:12:49,405 [INFO] root - STEP START: Then the negative outcome "unselected invalid drop city" should be recorded
+2026-05-23 21:12:49,405 [INFO] HomePage - Negative test observation: {
+  "case_description": "unselected drop city: Atlantis Nowhere",
+  "url_before": "https://www.goibibo.com/cars/",
+  "url_after": "https://www.goibibo.com/cars/",
+  "blocked": true,
+  "body_excerpt": "Flights\nHotels\nTrains\nCabs\nBus\nHolidays\nForex\nInsurance\nManage Booking\nMy Trips\nManage Your Trips\nLogin / Signup\nBook Online Cab\nOutstation\nOne-way\nOutstation\nRound trip\nAirport\ntransfer\nHourly Rental\nFrom\nTo\nPlease select drop location.\n+ Add Stops\nNew\nPickup Date\n25 May' 26\nPickup Time\n11:00 AM\nSEARCH CABS\nSukoon Mode ON with up to 50% OFF on Travel Bookings!\nLimited Period Offers\nGet up to \u20b9500 OFF* on top outstation cab routes!\nLimited Period Offer\nExperienced and polite drivers\nClean and comfortable cabs\nExplore More\nOnline Cab Booking on GoIbibo\nMost of the Indian tourists prefer travelling to their preferred destination via road. It is due to the fact that a road trip allows you to enjoy the scenic beauty at your own pace. Moreover, the comfort of travelling in a vehicle with your family and friends is unparalleled. You can opt for online cab booking that will make your journey hassle-free. You simply have to visit the GoIbibo portal and select a cab.\nDue to the easy-to-use inte",
+  "case_name": "unselected invalid drop city",
+  "scenario": "Search is blocked when drop city is typed but not selected"
+}
+2026-05-23 21:12:49,405 [INFO] root - STEP END: Then the negative outcome "unselected invalid drop city" should be recorded -> passed

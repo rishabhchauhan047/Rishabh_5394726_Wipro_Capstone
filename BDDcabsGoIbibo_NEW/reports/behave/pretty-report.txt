@@ -1,0 +1,125 @@
+Feature: Goibibo cab end to end UPI QR flow # features/goibibo_cab_e2e.feature:1
+  The end to end test reaches the review page, fills anonymous traveller details,
+  opens payment, selects UPI, and stops after the QR request is displayed.
+  @e2e @positive @review
+  Scenario: End to end one-way cab UPI QR flow for Delhi to Agra  # features/goibibo_cab_e2e.feature:6
+    Given the user opens the Goibibo cab booking page             # features/steps/goibibo_cab_steps.py:9
+    When the user searches one-way cabs                           # features/steps/goibibo_cab_steps.py:19
+      | pickup_query | pickup_suggestion       | drop_query | drop_suggestion            | pickup_date | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Agra       | Agra, Uttar Pradesh, India | tomorrow    | 10:00 AM    |
+    And the user applies listing filters                          # features/steps/goibibo_cab_steps.py:32
+      | filter    | expected_result_text |
+      | Hatchback | HATCHBACK            |
+      | Cng       | CNG                  |
+    Then available cab results should be displayed                # features/steps/goibibo_cab_steps.py:102
+    And the listing should reflect the applied filters            # features/steps/goibibo_cab_steps.py:107
+    When the user selects a cab matching "WagonR, Swift"          # features/steps/goibibo_cab_steps.py:47
+    Then the cab review page should be displayed                  # features/steps/goibibo_cab_steps.py:122
+    When the user fills anonymous traveller details               # features/steps/goibibo_cab_steps.py:52
+      | pickup_location                     | full_name           | mobile     | email                        |
+      | India Gate, New Delhi, Delhi, India | Anonymous Traveller | 9876543210 | anonymous.traveller@test.com |
+    Then the anonymous traveller details should remain filled     # features/steps/goibibo_cab_steps.py:127
+    When the user continues to payment                            # features/steps/goibibo_cab_steps.py:64
+    And the user selects UPI payment option                       # features/steps/goibibo_cab_steps.py:69
+    And the user clicks Generate QR                               # features/steps/goibibo_cab_steps.py:74
+    Then the UPI QR payment request should be displayed           # features/steps/goibibo_cab_steps.py:138
+    And no actual payment should be completed                     # features/steps/goibibo_cab_steps.py:143
+
+Feature: Goibibo cab negative validation coverage # features/goibibo_cab_negative.feature:1
+  Negative tests are expected to pass when the invalid search is blocked.
+  Each negative scenario records what was attempted and what happened.
+  @negative @validation
+  Scenario: Search is blocked when drop city is missing              # features/goibibo_cab_negative.feature:6
+    Given the user opens the Goibibo cab booking page                # features/steps/goibibo_cab_steps.py:9
+    When the user attempts a cab search without a drop city          # features/steps/goibibo_cab_steps.py:79
+      | pickup_query | pickup_suggestion       | pickup_date | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | tomorrow    | 10:00 AM    |
+    Then the negative outcome "missing drop city" should be recorded # features/steps/goibibo_cab_steps.py:148
+    And cab listing should not open                                  # features/steps/goibibo_cab_steps.py:153
+
+  @negative @validation
+  Scenario: Search is blocked when drop city is typed but not selected          # features/goibibo_cab_negative.feature:15
+    Given the user opens the Goibibo cab booking page                           # features/steps/goibibo_cab_steps.py:9
+    When the user attempts a cab search with an unselected drop city            # features/steps/goibibo_cab_steps.py:90
+      | pickup_query | pickup_suggestion       | invalid_drop_text | pickup_date    | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Atlantis Nowhere  | today + 2 days | 11:00 AM    |
+    Then the negative outcome "unselected invalid drop city" should be recorded # features/steps/goibibo_cab_steps.py:148
+    And cab listing should not open                                             # features/steps/goibibo_cab_steps.py:153
+
+Feature: Goibibo cab positive search and filter coverage # features/goibibo_cab_positive.feature:1
+  Positive tests verify that searches, filters, and cab result cards work for
+  different car preferences and journeys.
+  @positive @filter @sedan @diesel
+  Scenario: Search sedan diesel cabs from Delhi to Agra        # features/goibibo_cab_positive.feature:6
+    Given the user opens the Goibibo cab booking page          # features/steps/goibibo_cab_steps.py:9
+    When the user searches one-way cabs                        # features/steps/goibibo_cab_steps.py:19
+      | pickup_query | pickup_suggestion       | drop_query | drop_suggestion            | pickup_date    | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Agra       | Agra, Uttar Pradesh, India | today + 2 days | 11:00 AM    |
+    And the user applies listing filters                       # features/steps/goibibo_cab_steps.py:32
+      | filter | expected_result_text |
+      | Sedan  | SEDAN                |
+      | Diesel | Diesel               |
+    Then available cab results should be displayed             # features/steps/goibibo_cab_steps.py:102
+    And the listing should reflect the applied filters         # features/steps/goibibo_cab_steps.py:107
+    When the user selects a cab matching "Dzire, Etios, Sedan" # features/steps/goibibo_cab_steps.py:47
+    Then the cab review page should be displayed               # features/steps/goibibo_cab_steps.py:122
+
+  @positive @filter @suv @diesel
+  Scenario: Search SUV diesel cabs from Mumbai to Pune         # features/goibibo_cab_positive.feature:21
+    Given the user opens the Goibibo cab booking page          # features/steps/goibibo_cab_steps.py:9
+    When the user searches one-way cabs                        # features/steps/goibibo_cab_steps.py:19
+      | pickup_query | pickup_suggestion          | drop_query | drop_suggestion          | pickup_date    | pickup_time |
+      | Mumbai       | Mumbai, Maharashtra, India | Pune       | Pune, Maharashtra, India | today + 3 days | 12:00 PM    |
+    And the user applies listing filters                       # features/steps/goibibo_cab_steps.py:32
+      | filter | expected_result_text |
+      | SUV    | SUV                  |
+      | Diesel | Diesel               |
+    Then available cab results should be displayed             # features/steps/goibibo_cab_steps.py:102
+    And the listing should reflect the applied filters         # features/steps/goibibo_cab_steps.py:107
+    When the user selects a cab matching "Ertiga, Innova, SUV" # features/steps/goibibo_cab_steps.py:47
+    Then the cab review page should be displayed               # features/steps/goibibo_cab_steps.py:122
+
+  @positive @filter @electric
+  Scenario: Search electric cabs from Bangalore to Mysuru       # features/goibibo_cab_positive.feature:36
+    Given the user opens the Goibibo cab booking page           # features/steps/goibibo_cab_steps.py:9
+    When the user searches one-way cabs                         # features/steps/goibibo_cab_steps.py:19
+      | pickup_query | pickup_suggestion           | drop_query | drop_suggestion          | pickup_date    | pickup_time |
+      | Bangalore    | Bangalore, Karnataka, India | Mysuru     | Mysuru, Karnataka, India | today + 4 days | 01:00 PM    |
+    And the user applies listing filters                        # features/steps/goibibo_cab_steps.py:32
+      | filter   | expected_result_text |
+      | Electric | Electric             |
+    Then available cab results should be displayed              # features/steps/goibibo_cab_steps.py:102
+    And the listing should reflect the applied filters          # features/steps/goibibo_cab_steps.py:107
+    When the user selects a cab matching "BYD E6, Electric, EV" # features/steps/goibibo_cab_steps.py:47
+    Then the cab review page should be displayed                # features/steps/goibibo_cab_steps.py:122
+
+  @positive @filter @petrol
+  Scenario: Search petrol Innova Crysta cabs from Jaipur to Ajmer  # features/goibibo_cab_positive.feature:50
+    Given the user opens the Goibibo cab booking page              # features/steps/goibibo_cab_steps.py:9
+    When the user searches one-way cabs                            # features/steps/goibibo_cab_steps.py:19
+      | pickup_query | pickup_suggestion        | drop_query | drop_suggestion         | pickup_date    | pickup_time |
+      | Jaipur       | Jaipur, Rajasthan, India | Ajmer      | Ajmer, Rajasthan, India | today + 5 days | 02:00 PM    |
+    And the user applies listing filters                           # features/steps/goibibo_cab_steps.py:32
+      | filter        | expected_result_text |
+      | Petrol        | Petrol               |
+      | Innova Crysta | Innova Crysta        |
+    Then available cab results should be displayed                 # features/steps/goibibo_cab_steps.py:102
+    And the listing should reflect the applied filters             # features/steps/goibibo_cab_steps.py:107
+    When the user selects a cab matching "Innova Crysta, Innova"   # features/steps/goibibo_cab_steps.py:47
+    Then the cab review page should be displayed                   # features/steps/goibibo_cab_steps.py:122
+
+  @positive @different-city @ac
+  Scenario: Search AC cabs from Delhi to Chandigarh     # features/goibibo_cab_positive.feature:65
+    Given the user opens the Goibibo cab booking page   # features/steps/goibibo_cab_steps.py:9
+    When the user searches one-way cabs                 # features/steps/goibibo_cab_steps.py:19
+      | pickup_query | pickup_suggestion       | drop_query | drop_suggestion               | pickup_date    | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Chandigarh | Chandigarh, Chandigarh, India | today + 6 days | 09:00 AM    |
+    And the user applies listing filters                # features/steps/goibibo_cab_steps.py:32
+      | filter | expected_result_text |
+      | Sedan  | SEDAN                |
+    Then available cab results should be displayed      # features/steps/goibibo_cab_steps.py:102
+    And the listing should reflect the applied filters  # features/steps/goibibo_cab_steps.py:107
+    And the cab listing should mention "AC"             # features/steps/goibibo_cab_steps.py:112
+    When the user selects a cab matching "Dzire, Sedan" # features/steps/goibibo_cab_steps.py:47
+    Then the cab review page should be displayed        # features/steps/goibibo_cab_steps.py:122
+

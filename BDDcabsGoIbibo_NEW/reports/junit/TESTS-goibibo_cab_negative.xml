@@ -1,0 +1,53 @@
+<testsuite name="goibibo_cab_negative.Goibibo cab negative validation coverage" tests="2" errors="0" failures="0" skipped="0" time="21.828526" timestamp="2026-05-23T21:12:51.941798" hostname="shadow"><testcase classname="goibibo_cab_negative.Goibibo cab negative validation coverage" name="Search is blocked when drop city is missing" status="passed" time="10.133426"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @negative @validation
+  Scenario: Search is blocked when drop city is missing
+    Given the user opens the Goibibo cab booking page ... passed in 3.344s
+    When the user attempts a cab search without a drop city ... passed in 6.780s
+      | pickup_query | pickup_suggestion       | pickup_date | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | tomorrow    | 10:00 AM    |
+    Then the negative outcome "missing drop city" should be recorded ... passed in 0.010s
+    And cab listing should not open ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase><testcase classname="goibibo_cab_negative.Goibibo cab negative validation coverage" name="Search is blocked when drop city is typed but not selected" status="passed" time="11.695099"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @negative @validation
+  Scenario: Search is blocked when drop city is typed but not selected
+    Given the user opens the Goibibo cab booking page ... passed in 2.370s
+    When the user attempts a cab search with an unselected drop city ... passed in 9.324s
+      | pickup_query | pickup_suggestion       | invalid_drop_text | pickup_date    | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Atlantis Nowhere  | today + 2 days | 11:00 AM    |
+    Then the negative outcome "unselected invalid drop city" should be recorded ... passed in 0.000s
+    And cab listing should not open ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase></testsuite>

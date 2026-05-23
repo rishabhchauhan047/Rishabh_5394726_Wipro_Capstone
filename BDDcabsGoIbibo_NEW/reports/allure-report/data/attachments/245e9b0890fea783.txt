@@ -1,0 +1,12 @@
+Step: When the user attempts a cab search without a drop city
+Status: PASSED
+Current URL: https://www.goibibo.com/cars/
+
+Execution log:
+2026-05-23 21:12:22,842 [INFO] root - STEP START: When the user attempts a cab search without a drop city
+2026-05-23 21:12:23,183 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:12:23,183 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:12:25,696 [INFO] HomePage - Selected pickup date: 2026-05-24
+2026-05-23 21:12:26,247 [INFO] HomePage - Selected pickup time: 10:00 AM
+2026-05-23 21:12:26,248 [INFO] HomePage - Attempting invalid search: missing drop city
+2026-05-23 21:12:29,623 [INFO] root - STEP END: When the user attempts a cab search without a drop city -> passed

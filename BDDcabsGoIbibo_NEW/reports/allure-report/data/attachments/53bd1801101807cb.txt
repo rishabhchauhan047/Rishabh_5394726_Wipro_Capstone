@@ -1,0 +1,36 @@
+2026-05-23 21:14:07,431 [INFO] root - Starting scenario: Search petrol Innova Crysta cabs from Jaipur to Ajmer
+2026-05-23 21:14:08,586 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:14:08,586 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:14:11,148 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:14:11,304 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:14:11,652 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:14:11,652 [INFO] HomePage - Selecting city. Query=Jaipur, expected suggestion=Jaipur, Rajasthan, India
+2026-05-23 21:14:14,160 [INFO] HomePage - Selecting city. Query=Ajmer, expected suggestion=Ajmer, Rajasthan, India
+2026-05-23 21:14:16,158 [INFO] HomePage - Selected route: Jaipur, Rajasthan, India jaipur -> Ajmer, Rajasthan, India ajmer
+2026-05-23 21:14:16,758 [INFO] HomePage - Selected pickup date: 2026-05-28
+2026-05-23 21:14:17,322 [INFO] HomePage - Selected pickup time: 02:00 PM
+2026-05-23 21:14:17,323 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:14:20,767 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:14:21,181 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:14:21,324 [INFO] SearchResultsPage - Cab results are displayed with 8 selectable cabs.
+2026-05-23 21:14:21,381 [WARNING] SearchResultsPage - {'filter': 'Petrol', 'expected_result_text': 'Petrol', 'applied': False, 'reason': 'Filter was not available for this route at runtime.'}
+2026-05-23 21:14:21,567 [INFO] SearchResultsPage - Cab results are displayed with 8 selectable cabs.
+2026-05-23 21:14:21,595 [INFO] SearchResultsPage - Applying listing filter: Innova Crysta
+(1)
+2026-05-23 21:14:23,186 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Innova Crysta', 'expected_result_text': 'Innova Crysta', 'applied': True, 'label': 'Innova Crysta\n(1)', 'result_text_present': True}
+2026-05-23 21:14:23,186 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:14:23,294 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:14:23,335 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:23,336 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:14:23,439 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:14:23,475 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:23,512 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Innova Crysta', 'expected_result_text': 'Innova Crysta', 'result_text_present': True}]
+2026-05-23 21:14:23,525 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:14:23,611 [INFO] root - STEP START: When the user selects a cab matching "Innova Crysta, Innova"
+2026-05-23 21:14:23,642 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:23,712 [INFO] SearchResultsPage - Selecting cab card: Innova Crysta | exact model | 3.8/5 | AC | 6 Seats | ₹ 5,610 | + ₹457 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:14:24,628 [INFO] root - STEP END: When the user selects a cab matching "Innova Crysta, Innova" -> passed
+2026-05-23 21:14:24,740 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:14:25,289 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:14:25,290 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:14:25,401 [INFO] root - Finished scenario: Search petrol Innova Crysta cabs from Jaipur to Ajmer with status Status.passed

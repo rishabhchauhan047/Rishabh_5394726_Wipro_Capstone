@@ -1,0 +1,13 @@
+Step: When the user attempts a cab search with an unselected drop city
+Status: PASSED
+Current URL: https://www.goibibo.com/cars/
+
+Execution log:
+2026-05-23 21:12:39,982 [INFO] root - STEP START: When the user attempts a cab search with an unselected drop city
+2026-05-23 21:12:40,296 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:12:40,297 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:12:43,687 [INFO] HomePage - Typed drop text without selecting suggestion: Atlantis Nowhere
+2026-05-23 21:12:45,368 [INFO] HomePage - Selected pickup date: 2026-05-25
+2026-05-23 21:12:45,938 [INFO] HomePage - Selected pickup time: 11:00 AM
+2026-05-23 21:12:45,940 [INFO] HomePage - Attempting invalid search: unselected drop city: Atlantis Nowhere
+2026-05-23 21:12:49,306 [INFO] root - STEP END: When the user attempts a cab search with an unselected drop city -> passed

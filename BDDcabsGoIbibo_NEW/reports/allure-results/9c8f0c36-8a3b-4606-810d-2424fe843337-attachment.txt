@@ -1,0 +1,34 @@
+2026-05-23 21:13:47,863 [INFO] root - Starting scenario: Search electric cabs from Bangalore to Mysuru
+2026-05-23 21:13:49,040 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:13:49,040 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:13:51,247 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:13:51,424 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:13:51,768 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:13:51,768 [INFO] HomePage - Selecting city. Query=Bangalore, expected suggestion=Bangalore, Karnataka, India
+2026-05-23 21:13:53,689 [INFO] HomePage - Selecting city. Query=Mysuru, expected suggestion=Mysuru, Karnataka, India
+2026-05-23 21:13:55,468 [INFO] HomePage - Selected route: Bangalore, Karnataka, India bengaluru -> Mysuru, Karnataka, India mysuru
+2026-05-23 21:13:56,077 [INFO] HomePage - Selected pickup date: 2026-05-27
+2026-05-23 21:13:56,717 [INFO] HomePage - Selected pickup time: 01:00 PM
+2026-05-23 21:13:56,717 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:13:59,889 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:14:00,110 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:14:00,343 [INFO] SearchResultsPage - Cab results are displayed with 10 selectable cabs.
+2026-05-23 21:14:00,366 [INFO] SearchResultsPage - Applying listing filter: Electric
+(1)
+2026-05-23 21:14:01,934 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Electric', 'expected_result_text': 'Electric', 'applied': True, 'label': 'Electric\n(1)', 'result_text_present': False}
+2026-05-23 21:14:01,934 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:14:02,037 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:14:02,079 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:02,080 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:14:02,181 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:14:02,219 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:02,258 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Electric', 'expected_result_text': 'Electric', 'result_text_present': False}]
+2026-05-23 21:14:02,269 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:14:02,352 [INFO] root - STEP START: When the user selects a cab matching "BYD E6, Electric, EV"
+2026-05-23 21:14:02,374 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:02,425 [INFO] SearchResultsPage - Selecting cab card: BYD E6 | exact model | 5/5 | AC | 4 Seats | 29% off  | ₹ 6,397 | ₹ 4,548 | + ₹286 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:14:03,280 [INFO] root - STEP END: When the user selects a cab matching "BYD E6, Electric, EV" -> passed
+2026-05-23 21:14:03,398 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:14:05,019 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:14:05,019 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:14:05,117 [INFO] root - Finished scenario: Search electric cabs from Bangalore to Mysuru with status Status.passed

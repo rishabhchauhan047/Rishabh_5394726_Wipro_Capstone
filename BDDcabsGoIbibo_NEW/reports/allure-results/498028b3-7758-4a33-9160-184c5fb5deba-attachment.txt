@@ -1,0 +1,8 @@
+Step: And cab listing should not open
+Status: PASSED
+Current URL: https://www.goibibo.com/cars/
+
+Execution log:
+2026-05-23 21:12:49,535 [INFO] root - STEP START: And cab listing should not open
+2026-05-23 21:12:49,535 [INFO] HomePage - Invalid search was blocked as expected.
+2026-05-23 21:12:49,535 [INFO] root - STEP END: And cab listing should not open -> passed

@@ -1,0 +1,9 @@
+Step: And the user selects UPI payment option
+Status: PASSED
+Current URL: https://payments.goibibo.com/checkout/?id=965679651928882
+
+Execution log:
+2026-05-23 21:12:11,818 [INFO] root - STEP START: And the user selects UPI payment option
+2026-05-23 21:12:12,928 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,321 [INFO] PaymentPage - UPI payment option is selected or already active.
+2026-05-23 21:12:13,321 [INFO] root - STEP END: And the user selects UPI payment option -> passed

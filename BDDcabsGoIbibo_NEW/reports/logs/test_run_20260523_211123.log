@@ -1,0 +1,304 @@
+2026-05-23 21:11:23,345 [INFO] root - Starting Goibibo BDD automation run. Log file: reports\logs\test_run_20260523_211123.log
+2026-05-23 21:11:23,347 [INFO] root - Starting scenario: End to end one-way cab UPI QR flow for Delhi to Agra
+2026-05-23 21:11:25,735 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:11:25,736 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:11:28,732 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:11:29,011 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:11:29,840 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:11:29,841 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:11:31,776 [INFO] HomePage - Selecting city. Query=Agra, expected suggestion=Agra, Uttar Pradesh, India
+2026-05-23 21:11:33,583 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Agra, Uttar Pradesh, India agra
+2026-05-23 21:11:34,179 [INFO] HomePage - Selected pickup date: 2026-05-24
+2026-05-23 21:11:34,787 [INFO] HomePage - Selected pickup time: 10:00 AM
+2026-05-23 21:11:34,787 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:11:39,844 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:11:39,969 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:11:40,747 [INFO] SearchResultsPage - Cab results are displayed with 10 selectable cabs.
+2026-05-23 21:11:40,782 [INFO] SearchResultsPage - Applying listing filter: Hatchback
+(2)
+2026-05-23 21:11:42,363 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Hatchback', 'expected_result_text': 'HATCHBACK', 'applied': True, 'label': 'Hatchback\n(2)', 'result_text_present': False}
+2026-05-23 21:11:42,388 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:11:42,401 [INFO] SearchResultsPage - Applying listing filter: Cng
+(3)
+2026-05-23 21:11:44,148 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Cng', 'expected_result_text': 'CNG', 'applied': True, 'label': 'Cng\n(3)', 'result_text_present': False}
+2026-05-23 21:11:44,149 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:11:44,282 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:11:44,370 [INFO] SearchResultsPage - Cab results are displayed with 4 selectable cabs.
+2026-05-23 21:11:44,370 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:11:44,479 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:11:44,551 [INFO] SearchResultsPage - Cab results are displayed with 4 selectable cabs.
+2026-05-23 21:11:44,777 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Hatchback', 'expected_result_text': 'HATCHBACK', 'result_text_present': False}, {'filter': 'Cng', 'expected_result_text': 'CNG', 'result_text_present': False}]
+2026-05-23 21:11:44,822 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:11:44,912 [INFO] root - STEP START: When the user selects a cab matching "WagonR, Swift"
+2026-05-23 21:11:44,964 [INFO] SearchResultsPage - Cab results are displayed with 4 selectable cabs.
+2026-05-23 21:11:45,053 [INFO] SearchResultsPage - Selecting cab card: WagonR, Swift | or similar | 4.4/5 | AC | 4 Seats | 16% off  | ₹ 2,835 | ₹ 2,394 | + ₹609 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:11:45,966 [INFO] root - STEP END: When the user selects a cab matching "WagonR, Swift" -> passed
+2026-05-23 21:11:46,081 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:11:46,629 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:11:46,630 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:11:46,747 [INFO] root - STEP START: When the user fills anonymous traveller details
+2026-05-23 21:11:46,785 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:12:01,622 [INFO] ReviewPage - Selected exact pickup location suggestion: India Gate, New Delhi, Delhi, India
+2026-05-23 21:12:05,055 [INFO] ReviewPage - Filled pickup and anonymous traveller details: pickup=India Gate, New Delhi, Delhi, India, name=Anonymous Traveller, mobile=9876543210, email=anonymous.traveller@test.com
+2026-05-23 21:12:05,056 [INFO] root - STEP END: When the user fills anonymous traveller details -> passed
+2026-05-23 21:12:05,138 [INFO] root - STEP START: Then the anonymous traveller details should remain filled
+2026-05-23 21:12:05,235 [INFO] ReviewPage - Anonymous traveller details remain filled.
+2026-05-23 21:12:05,236 [INFO] root - STEP END: Then the anonymous traveller details should remain filled -> passed
+2026-05-23 21:12:05,317 [INFO] root - STEP START: When the user continues to payment
+2026-05-23 21:12:05,342 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:12:05,644 [INFO] ReviewPage - Clicked PAY NOW to continue to payment page.
+2026-05-23 21:12:11,679 [INFO] root - STEP END: When the user continues to payment -> passed
+2026-05-23 21:12:11,818 [INFO] root - STEP START: And the user selects UPI payment option
+2026-05-23 21:12:12,928 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,321 [INFO] PaymentPage - UPI payment option is selected or already active.
+2026-05-23 21:12:13,321 [INFO] root - STEP END: And the user selects UPI payment option -> passed
+2026-05-23 21:12:13,412 [INFO] root - STEP START: And the user clicks Generate QR
+2026-05-23 21:12:13,456 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,523 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,994 [INFO] PaymentPage - UPI payment option is selected or already active.
+2026-05-23 21:12:14,342 [INFO] PaymentPage - Clicked UPI QR action button: VIEW QR
+2026-05-23 21:12:15,479 [INFO] PaymentPage - UPI QR payment request is displayed.
+2026-05-23 21:12:15,479 [INFO] root - STEP END: And the user clicks Generate QR -> passed
+2026-05-23 21:12:15,572 [INFO] root - STEP START: Then the UPI QR payment request should be displayed
+2026-05-23 21:12:15,617 [INFO] PaymentPage - UPI QR payment request is displayed.
+2026-05-23 21:12:15,618 [INFO] root - STEP END: Then the UPI QR payment request should be displayed -> passed
+2026-05-23 21:12:15,696 [INFO] root - STEP START: And no actual payment should be completed
+2026-05-23 21:12:15,729 [INFO] PaymentPage - No actual payment was completed; test stopped at QR request.
+2026-05-23 21:12:15,729 [INFO] root - STEP END: And no actual payment should be completed -> passed
+2026-05-23 21:12:15,808 [INFO] root - Finished scenario: End to end one-way cab UPI QR flow for Delhi to Agra with status Status.passed
+2026-05-23 21:12:18,140 [INFO] root - Starting scenario: Search is blocked when drop city is missing
+2026-05-23 21:12:19,341 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:12:19,341 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:12:22,685 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:12:22,842 [INFO] root - STEP START: When the user attempts a cab search without a drop city
+2026-05-23 21:12:23,183 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:12:23,183 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:12:25,696 [INFO] HomePage - Selected pickup date: 2026-05-24
+2026-05-23 21:12:26,247 [INFO] HomePage - Selected pickup time: 10:00 AM
+2026-05-23 21:12:26,248 [INFO] HomePage - Attempting invalid search: missing drop city
+2026-05-23 21:12:29,623 [INFO] root - STEP END: When the user attempts a cab search without a drop city -> passed
+2026-05-23 21:12:29,728 [INFO] root - STEP START: Then the negative outcome "missing drop city" should be recorded
+2026-05-23 21:12:29,738 [INFO] HomePage - Negative test observation: {
+  "case_description": "missing drop city",
+  "url_before": "https://www.goibibo.com/cars/",
+  "url_after": "https://www.goibibo.com/cars/",
+  "blocked": true,
+  "body_excerpt": "Flights\nHotels\nTrains\nCabs\nBus\nHolidays\nForex\nInsurance\nManage Booking\nMy Trips\nManage Your Trips\nLogin / Signup\nBook Online Cab\nOutstation\nOne-way\nOutstation\nRound trip\nAirport\ntransfer\nHourly Rental\nFrom\nTo\nPlease select drop location.\n+ Add Stops\nNew\nPickup Date\n24 May' 26\nPickup Time\n10:00 AM\nSEARCH CABS\nSukoon Mode ON with up to 50% OFF on Travel Bookings!\nLimited Period Offers\nGet up to \u20b9500 OFF* on top outstation cab routes!\nLimited Period Offer\nExperienced and polite drivers\nClean and comfortable cabs\nExplore More\nOnline Cab Booking on GoIbibo\nMost of the Indian tourists prefer travelling to their preferred destination via road. It is due to the fact that a road trip allows you to enjoy the scenic beauty at your own pace. Moreover, the comfort of travelling in a vehicle with your family and friends is unparalleled. You can opt for online cab booking that will make your journey hassle-free. You simply have to visit the GoIbibo portal and select a cab.\nDue to the easy-to-use inte",
+  "case_name": "missing drop city",
+  "scenario": "Search is blocked when drop city is missing"
+}
+2026-05-23 21:12:29,738 [INFO] root - STEP END: Then the negative outcome "missing drop city" should be recorded -> passed
+2026-05-23 21:12:29,829 [INFO] root - STEP START: And cab listing should not open
+2026-05-23 21:12:29,830 [INFO] HomePage - Invalid search was blocked as expected.
+2026-05-23 21:12:29,830 [INFO] root - STEP END: And cab listing should not open -> passed
+2026-05-23 21:12:29,921 [INFO] root - Finished scenario: Search is blocked when drop city is missing with status Status.passed
+2026-05-23 21:12:32,212 [INFO] root - Starting scenario: Search is blocked when drop city is typed but not selected
+2026-05-23 21:12:37,477 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:12:37,477 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:12:39,847 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:12:39,982 [INFO] root - STEP START: When the user attempts a cab search with an unselected drop city
+2026-05-23 21:12:40,296 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:12:40,297 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:12:43,687 [INFO] HomePage - Typed drop text without selecting suggestion: Atlantis Nowhere
+2026-05-23 21:12:45,368 [INFO] HomePage - Selected pickup date: 2026-05-25
+2026-05-23 21:12:45,938 [INFO] HomePage - Selected pickup time: 11:00 AM
+2026-05-23 21:12:45,940 [INFO] HomePage - Attempting invalid search: unselected drop city: Atlantis Nowhere
+2026-05-23 21:12:49,306 [INFO] root - STEP END: When the user attempts a cab search with an unselected drop city -> passed
+2026-05-23 21:12:49,405 [INFO] root - STEP START: Then the negative outcome "unselected invalid drop city" should be recorded
+2026-05-23 21:12:49,405 [INFO] HomePage - Negative test observation: {
+  "case_description": "unselected drop city: Atlantis Nowhere",
+  "url_before": "https://www.goibibo.com/cars/",
+  "url_after": "https://www.goibibo.com/cars/",
+  "blocked": true,
+  "body_excerpt": "Flights\nHotels\nTrains\nCabs\nBus\nHolidays\nForex\nInsurance\nManage Booking\nMy Trips\nManage Your Trips\nLogin / Signup\nBook Online Cab\nOutstation\nOne-way\nOutstation\nRound trip\nAirport\ntransfer\nHourly Rental\nFrom\nTo\nPlease select drop location.\n+ Add Stops\nNew\nPickup Date\n25 May' 26\nPickup Time\n11:00 AM\nSEARCH CABS\nSukoon Mode ON with up to 50% OFF on Travel Bookings!\nLimited Period Offers\nGet up to \u20b9500 OFF* on top outstation cab routes!\nLimited Period Offer\nExperienced and polite drivers\nClean and comfortable cabs\nExplore More\nOnline Cab Booking on GoIbibo\nMost of the Indian tourists prefer travelling to their preferred destination via road. It is due to the fact that a road trip allows you to enjoy the scenic beauty at your own pace. Moreover, the comfort of travelling in a vehicle with your family and friends is unparalleled. You can opt for online cab booking that will make your journey hassle-free. You simply have to visit the GoIbibo portal and select a cab.\nDue to the easy-to-use inte",
+  "case_name": "unselected invalid drop city",
+  "scenario": "Search is blocked when drop city is typed but not selected"
+}
+2026-05-23 21:12:49,405 [INFO] root - STEP END: Then the negative outcome "unselected invalid drop city" should be recorded -> passed
+2026-05-23 21:12:49,535 [INFO] root - STEP START: And cab listing should not open
+2026-05-23 21:12:49,535 [INFO] HomePage - Invalid search was blocked as expected.
+2026-05-23 21:12:49,535 [INFO] root - STEP END: And cab listing should not open -> passed
+2026-05-23 21:12:49,632 [INFO] root - Finished scenario: Search is blocked when drop city is typed but not selected with status Status.passed
+2026-05-23 21:12:51,943 [INFO] root - Starting scenario: Search sedan diesel cabs from Delhi to Agra
+2026-05-23 21:12:53,108 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:12:53,109 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:12:55,498 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:12:55,687 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:12:56,031 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:12:56,031 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:12:57,967 [INFO] HomePage - Selecting city. Query=Agra, expected suggestion=Agra, Uttar Pradesh, India
+2026-05-23 21:12:59,976 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Agra, Uttar Pradesh, India agra
+2026-05-23 21:13:00,627 [INFO] HomePage - Selected pickup date: 2026-05-25
+2026-05-23 21:13:01,200 [INFO] HomePage - Selected pickup time: 11:00 AM
+2026-05-23 21:13:01,200 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:13:06,185 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:13:06,282 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:13:07,452 [INFO] SearchResultsPage - Cab results are displayed with 9 selectable cabs.
+2026-05-23 21:13:07,478 [INFO] SearchResultsPage - Applying listing filter: Sedan
+(2)
+2026-05-23 21:13:09,079 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'applied': True, 'label': 'Sedan\n(2)', 'result_text_present': False}
+2026-05-23 21:13:09,122 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:13:09,150 [INFO] SearchResultsPage - Applying listing filter: Diesel
+(4)
+2026-05-23 21:13:10,753 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'applied': True, 'label': 'Diesel\n(4)', 'result_text_present': False}
+2026-05-23 21:13:10,753 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:13:10,837 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:13:10,887 [INFO] SearchResultsPage - Cab results are displayed with 5 selectable cabs.
+2026-05-23 21:13:10,887 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:13:10,973 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:13:11,023 [INFO] SearchResultsPage - Cab results are displayed with 5 selectable cabs.
+2026-05-23 21:13:11,259 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'result_text_present': False}, {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'result_text_present': False}]
+2026-05-23 21:13:11,301 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:13:11,391 [INFO] root - STEP START: When the user selects a cab matching "Dzire, Etios, Sedan"
+2026-05-23 21:13:11,439 [INFO] SearchResultsPage - Cab results are displayed with 5 selectable cabs.
+2026-05-23 21:13:11,552 [INFO] SearchResultsPage - Selecting cab card: Dzire, Etios | or similar | 3.7/5 | AC | 4 Seats | ₹ 2,827 | + ₹200 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:13:12,388 [INFO] root - STEP END: When the user selects a cab matching "Dzire, Etios, Sedan" -> passed
+2026-05-23 21:13:12,502 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:13:13,584 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:13:13,584 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:13:13,681 [INFO] root - Finished scenario: Search sedan diesel cabs from Delhi to Agra with status Status.passed
+2026-05-23 21:13:16,069 [INFO] root - Starting scenario: Search SUV diesel cabs from Mumbai to Pune
+2026-05-23 21:13:17,233 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:13:17,233 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:13:19,435 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:13:19,606 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:13:19,920 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:13:19,921 [INFO] HomePage - Selecting city. Query=Mumbai, expected suggestion=Mumbai, Maharashtra, India
+2026-05-23 21:13:22,899 [INFO] HomePage - Selecting city. Query=Pune, expected suggestion=Pune, Maharashtra, India
+2026-05-23 21:13:24,806 [INFO] HomePage - Selected route: Mumbai, Maharashtra, India mumbai -> Pune, Maharashtra, India pune
+2026-05-23 21:13:25,375 [INFO] HomePage - Selected pickup date: 2026-05-26
+2026-05-23 21:13:25,948 [INFO] HomePage - Selected pickup time: 12:00 PM
+2026-05-23 21:13:25,948 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:13:30,804 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:13:30,907 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:13:32,103 [INFO] SearchResultsPage - Cab results are displayed with 11 selectable cabs.
+2026-05-23 21:13:32,127 [INFO] SearchResultsPage - Applying listing filter: SUV
+(7)
+2026-05-23 21:13:33,887 [INFO] SearchResultsPage - Filter outcome: {'filter': 'SUV', 'expected_result_text': 'SUV', 'applied': True, 'label': 'SUV\n(7)', 'result_text_present': False}
+2026-05-23 21:13:33,996 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:34,016 [INFO] SearchResultsPage - Applying listing filter: Diesel
+(3)
+2026-05-23 21:13:35,668 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'applied': True, 'label': 'Diesel\n(3)', 'result_text_present': False}
+2026-05-23 21:13:35,668 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:13:35,749 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:13:35,860 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:35,860 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:13:35,965 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:13:36,057 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:36,388 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'SUV', 'expected_result_text': 'SUV', 'result_text_present': False}, {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'result_text_present': False}]
+2026-05-23 21:13:36,420 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:13:36,507 [INFO] root - STEP START: When the user selects a cab matching "Ertiga, Innova, SUV"
+2026-05-23 21:13:36,573 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:36,708 [INFO] SearchResultsPage - Selecting cab card: Xylo, Ertiga | or similar | 4.3/5 | AC | 6 Seats | 15% off  | ₹ 3,112 | ₹ 2,638 | + ₹586 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:13:37,072 [INFO] root - STEP END: When the user selects a cab matching "Ertiga, Innova, SUV" -> passed
+2026-05-23 21:13:37,226 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:13:45,442 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:13:45,442 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:13:45,538 [INFO] root - Finished scenario: Search SUV diesel cabs from Mumbai to Pune with status Status.passed
+2026-05-23 21:13:47,863 [INFO] root - Starting scenario: Search electric cabs from Bangalore to Mysuru
+2026-05-23 21:13:49,040 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:13:49,040 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:13:51,247 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:13:51,424 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:13:51,768 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:13:51,768 [INFO] HomePage - Selecting city. Query=Bangalore, expected suggestion=Bangalore, Karnataka, India
+2026-05-23 21:13:53,689 [INFO] HomePage - Selecting city. Query=Mysuru, expected suggestion=Mysuru, Karnataka, India
+2026-05-23 21:13:55,468 [INFO] HomePage - Selected route: Bangalore, Karnataka, India bengaluru -> Mysuru, Karnataka, India mysuru
+2026-05-23 21:13:56,077 [INFO] HomePage - Selected pickup date: 2026-05-27
+2026-05-23 21:13:56,717 [INFO] HomePage - Selected pickup time: 01:00 PM
+2026-05-23 21:13:56,717 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:13:59,889 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:14:00,110 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:14:00,343 [INFO] SearchResultsPage - Cab results are displayed with 10 selectable cabs.
+2026-05-23 21:14:00,366 [INFO] SearchResultsPage - Applying listing filter: Electric
+(1)
+2026-05-23 21:14:01,934 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Electric', 'expected_result_text': 'Electric', 'applied': True, 'label': 'Electric\n(1)', 'result_text_present': False}
+2026-05-23 21:14:01,934 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:14:02,037 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:14:02,079 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:02,080 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:14:02,181 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:14:02,219 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:02,258 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Electric', 'expected_result_text': 'Electric', 'result_text_present': False}]
+2026-05-23 21:14:02,269 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:14:02,352 [INFO] root - STEP START: When the user selects a cab matching "BYD E6, Electric, EV"
+2026-05-23 21:14:02,374 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:02,425 [INFO] SearchResultsPage - Selecting cab card: BYD E6 | exact model | 5/5 | AC | 4 Seats | 29% off  | ₹ 6,397 | ₹ 4,548 | + ₹286 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:14:03,280 [INFO] root - STEP END: When the user selects a cab matching "BYD E6, Electric, EV" -> passed
+2026-05-23 21:14:03,398 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:14:05,019 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:14:05,019 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:14:05,117 [INFO] root - Finished scenario: Search electric cabs from Bangalore to Mysuru with status Status.passed
+2026-05-23 21:14:07,431 [INFO] root - Starting scenario: Search petrol Innova Crysta cabs from Jaipur to Ajmer
+2026-05-23 21:14:08,586 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:14:08,586 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:14:11,148 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:14:11,304 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:14:11,652 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:14:11,652 [INFO] HomePage - Selecting city. Query=Jaipur, expected suggestion=Jaipur, Rajasthan, India
+2026-05-23 21:14:14,160 [INFO] HomePage - Selecting city. Query=Ajmer, expected suggestion=Ajmer, Rajasthan, India
+2026-05-23 21:14:16,158 [INFO] HomePage - Selected route: Jaipur, Rajasthan, India jaipur -> Ajmer, Rajasthan, India ajmer
+2026-05-23 21:14:16,758 [INFO] HomePage - Selected pickup date: 2026-05-28
+2026-05-23 21:14:17,322 [INFO] HomePage - Selected pickup time: 02:00 PM
+2026-05-23 21:14:17,323 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:14:20,767 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:14:21,181 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:14:21,324 [INFO] SearchResultsPage - Cab results are displayed with 8 selectable cabs.
+2026-05-23 21:14:21,381 [WARNING] SearchResultsPage - {'filter': 'Petrol', 'expected_result_text': 'Petrol', 'applied': False, 'reason': 'Filter was not available for this route at runtime.'}
+2026-05-23 21:14:21,567 [INFO] SearchResultsPage - Cab results are displayed with 8 selectable cabs.
+2026-05-23 21:14:21,595 [INFO] SearchResultsPage - Applying listing filter: Innova Crysta
+(1)
+2026-05-23 21:14:23,186 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Innova Crysta', 'expected_result_text': 'Innova Crysta', 'applied': True, 'label': 'Innova Crysta\n(1)', 'result_text_present': True}
+2026-05-23 21:14:23,186 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:14:23,294 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:14:23,335 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:23,336 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:14:23,439 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:14:23,475 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:23,512 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Innova Crysta', 'expected_result_text': 'Innova Crysta', 'result_text_present': True}]
+2026-05-23 21:14:23,525 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:14:23,611 [INFO] root - STEP START: When the user selects a cab matching "Innova Crysta, Innova"
+2026-05-23 21:14:23,642 [INFO] SearchResultsPage - Cab results are displayed with 1 selectable cabs.
+2026-05-23 21:14:23,712 [INFO] SearchResultsPage - Selecting cab card: Innova Crysta | exact model | 3.8/5 | AC | 6 Seats | ₹ 5,610 | + ₹457 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:14:24,628 [INFO] root - STEP END: When the user selects a cab matching "Innova Crysta, Innova" -> passed
+2026-05-23 21:14:24,740 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:14:25,289 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:14:25,290 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:14:25,401 [INFO] root - Finished scenario: Search petrol Innova Crysta cabs from Jaipur to Ajmer with status Status.passed
+2026-05-23 21:14:27,715 [INFO] root - Starting scenario: Search AC cabs from Delhi to Chandigarh
+2026-05-23 21:14:28,893 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:14:28,893 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:14:31,179 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:14:39,416 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:14:39,728 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:14:39,728 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:14:41,609 [INFO] HomePage - Selecting city. Query=Chandigarh, expected suggestion=Chandigarh, Chandigarh, India
+2026-05-23 21:14:43,546 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Chandigarh, India
+2026-05-23 21:14:44,152 [INFO] HomePage - Selected pickup date: 2026-05-29
+2026-05-23 21:14:44,828 [INFO] HomePage - Selected pickup time: 09:00 AM
+2026-05-23 21:14:44,828 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:14:49,990 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:14:50,094 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:14:50,796 [INFO] SearchResultsPage - Cab results are displayed with 8 selectable cabs.
+2026-05-23 21:14:50,824 [INFO] SearchResultsPage - Applying listing filter: Sedan
+(2)
+2026-05-23 21:14:52,378 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'applied': True, 'label': 'Sedan\n(2)', 'result_text_present': False}
+2026-05-23 21:14:52,378 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:14:52,477 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:14:52,506 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:14:52,506 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:14:52,589 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:14:52,621 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:14:52,690 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'result_text_present': False}]
+2026-05-23 21:14:52,703 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:14:52,799 [INFO] root - STEP START: And the cab listing should mention "AC"
+2026-05-23 21:14:52,876 [INFO] root - STEP END: And the cab listing should mention "AC" -> passed
+2026-05-23 21:14:52,974 [INFO] root - STEP START: When the user selects a cab matching "Dzire, Sedan"
+2026-05-23 21:14:53,006 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:14:53,076 [INFO] SearchResultsPage - Selecting cab card: Dzire, Etios | or similar | 4.8/5 | AC | 4 Seats | ₹ 3,575 | + ₹237 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:14:53,899 [INFO] root - STEP END: When the user selects a cab matching "Dzire, Sedan" -> passed
+2026-05-23 21:14:54,050 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:14:54,603 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:14:54,603 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:14:54,722 [INFO] root - Finished scenario: Search AC cabs from Delhi to Chandigarh with status Status.passed
+2026-05-23 21:14:57,063 [INFO] root - Finished Goibibo BDD automation run.

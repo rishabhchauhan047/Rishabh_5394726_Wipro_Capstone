@@ -1,0 +1,14 @@
+Step: When the user searches one-way cabs
+Status: PASSED
+Current URL: https://www.goibibo.com/cabs/listing?fromCity=%7B%22latitude%22%3A28.6139298%2C%22longitude%22%3A77.2088282%2C%22pincode%22%3Anull%2C%22place_id%22%3A%22ChIJLbZ-NFv9DDkRzk0gTkm3wlI%22%2C%22city%22%3A%22NCR%22%2C%22google_city%22%3A%22New%20Delhi%22%2C%22state%22%3A%22Delhi%22%2C%22country%22%3A%22India%22%2C%22country_code%22%3A%22IN%22%2C%22is_city%22%3Atrue%2C%22is_airport%22%3Afalse%2C%22google_address%22%3A%22New%20Delhi%2C%20Delhi%2C%20India%22%2C%22address%22%3A%22New%20Delhi%2C%20Delhi%2C%20India%22%7D&toCity=%7B%22latitude%22%3A30.7333148%2C%22longitude%22%3A76.7794179%2C%22pincode%22%3Anull%2C%22place_id%22%3A%22ChIJa8lu5gvtDzkR_hlzUvln_6U%22%2C%22city%22%3A%22%22%2C%22google_city%22%3A%22Chandigarh%22%2C%22state%22%3A%22%22%2C%22country%22%3A%22India%22%2C%22country_code%22%3A%22IN%22%2C%22is_city%22%3Atrue%2C%22google_address%22%3A%22Chandigarh%2C%20India%22%2C%22address%22%3A%22Chandigarh%2C%20India%22%7D&tripType=OW&departDate=29-05-2026&pickupTime=09:00&intlFlow=false&returnDate=30-05-2026&dropTime=12:00
+
+Execution log:
+2026-05-23 21:14:39,416 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:14:39,728 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:14:39,728 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:14:41,609 [INFO] HomePage - Selecting city. Query=Chandigarh, expected suggestion=Chandigarh, Chandigarh, India
+2026-05-23 21:14:43,546 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Chandigarh, India
+2026-05-23 21:14:44,152 [INFO] HomePage - Selected pickup date: 2026-05-29
+2026-05-23 21:14:44,828 [INFO] HomePage - Selected pickup time: 09:00 AM
+2026-05-23 21:14:44,828 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:14:49,990 [INFO] root - STEP END: When the user searches one-way cabs -> passed

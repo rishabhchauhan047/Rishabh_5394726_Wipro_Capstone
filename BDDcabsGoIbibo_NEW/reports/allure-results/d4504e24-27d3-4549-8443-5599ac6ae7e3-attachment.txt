@@ -1,0 +1,38 @@
+2026-05-23 21:12:51,943 [INFO] root - Starting scenario: Search sedan diesel cabs from Delhi to Agra
+2026-05-23 21:12:53,108 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:12:53,109 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:12:55,498 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:12:55,687 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:12:56,031 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:12:56,031 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:12:57,967 [INFO] HomePage - Selecting city. Query=Agra, expected suggestion=Agra, Uttar Pradesh, India
+2026-05-23 21:12:59,976 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Agra, Uttar Pradesh, India agra
+2026-05-23 21:13:00,627 [INFO] HomePage - Selected pickup date: 2026-05-25
+2026-05-23 21:13:01,200 [INFO] HomePage - Selected pickup time: 11:00 AM
+2026-05-23 21:13:01,200 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:13:06,185 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:13:06,282 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:13:07,452 [INFO] SearchResultsPage - Cab results are displayed with 9 selectable cabs.
+2026-05-23 21:13:07,478 [INFO] SearchResultsPage - Applying listing filter: Sedan
+(2)
+2026-05-23 21:13:09,079 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'applied': True, 'label': 'Sedan\n(2)', 'result_text_present': False}
+2026-05-23 21:13:09,122 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:13:09,150 [INFO] SearchResultsPage - Applying listing filter: Diesel
+(4)
+2026-05-23 21:13:10,753 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'applied': True, 'label': 'Diesel\n(4)', 'result_text_present': False}
+2026-05-23 21:13:10,753 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:13:10,837 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:13:10,887 [INFO] SearchResultsPage - Cab results are displayed with 5 selectable cabs.
+2026-05-23 21:13:10,887 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:13:10,973 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:13:11,023 [INFO] SearchResultsPage - Cab results are displayed with 5 selectable cabs.
+2026-05-23 21:13:11,259 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'result_text_present': False}, {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'result_text_present': False}]
+2026-05-23 21:13:11,301 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:13:11,391 [INFO] root - STEP START: When the user selects a cab matching "Dzire, Etios, Sedan"
+2026-05-23 21:13:11,439 [INFO] SearchResultsPage - Cab results are displayed with 5 selectable cabs.
+2026-05-23 21:13:11,552 [INFO] SearchResultsPage - Selecting cab card: Dzire, Etios | or similar | 3.7/5 | AC | 4 Seats | ₹ 2,827 | + ₹200 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:13:12,388 [INFO] root - STEP END: When the user selects a cab matching "Dzire, Etios, Sedan" -> passed
+2026-05-23 21:13:12,502 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:13:13,584 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:13:13,584 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:13:13,681 [INFO] root - Finished scenario: Search sedan diesel cabs from Delhi to Agra with status Status.passed
