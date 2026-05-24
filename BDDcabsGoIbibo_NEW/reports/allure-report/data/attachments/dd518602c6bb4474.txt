@@ -1,0 +1,9 @@
+Step: When the user continues to payment
+Status: PASSED
+Current URL: https://payments.goibibo.com/checkout/?id=965679651928882
+
+Execution log:
+2026-05-23 21:12:05,317 [INFO] root - STEP START: When the user continues to payment
+2026-05-23 21:12:05,342 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:12:05,644 [INFO] ReviewPage - Clicked PAY NOW to continue to payment page.
+2026-05-23 21:12:11,679 [INFO] root - STEP END: When the user continues to payment -> passed

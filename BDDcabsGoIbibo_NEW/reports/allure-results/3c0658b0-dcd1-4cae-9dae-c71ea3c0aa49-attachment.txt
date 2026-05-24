@@ -1,0 +1,8 @@
+Step: And no actual payment should be completed
+Status: PASSED
+Current URL: https://payments.goibibo.com/checkout/?id=965679651928882
+
+Execution log:
+2026-05-23 21:12:15,696 [INFO] root - STEP START: And no actual payment should be completed
+2026-05-23 21:12:15,729 [INFO] PaymentPage - No actual payment was completed; test stopped at QR request.
+2026-05-23 21:12:15,729 [INFO] root - STEP END: And no actual payment should be completed -> passed

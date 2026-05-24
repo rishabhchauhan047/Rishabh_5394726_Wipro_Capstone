@@ -1,0 +1,9 @@
+INFO     CabBookingPage:base_page.py:103 Opening Goibibo Cabs page directly
+INFO     CabBookingPage:base_page.py:103 Checking and closing popups if present
+INFO     CabBookingPage:base_page.py:134 Screenshot captured: screenshots\01_cabs_page_direct.png
+INFO     CabBookingPage:base_page.py:103 Checking and closing popups if present
+INFO     CabBookingPage:base_page.py:103 Selecting From city: Delhi
+INFO     CabBookingPage:base_page.py:134 Screenshot captured: screenshots\tc03_positive_pickup_city_selected.png
+INFO     CabBookingPage:base_page.py:103 Selecting To city: Agra
+INFO     CabBookingPage:base_page.py:134 Screenshot captured: screenshots\tc03_positive_destination_city_selected.png
+INFO     CabBookingPage:base_page.py:103 Positive test passed: Route selected as Delhi to Agra.

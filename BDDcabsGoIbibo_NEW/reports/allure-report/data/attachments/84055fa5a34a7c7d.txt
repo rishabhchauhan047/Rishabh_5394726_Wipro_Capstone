@@ -1,0 +1,38 @@
+2026-05-23 21:13:16,069 [INFO] root - Starting scenario: Search SUV diesel cabs from Mumbai to Pune
+2026-05-23 21:13:17,233 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:13:17,233 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:13:19,435 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:13:19,606 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:13:19,920 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:13:19,921 [INFO] HomePage - Selecting city. Query=Mumbai, expected suggestion=Mumbai, Maharashtra, India
+2026-05-23 21:13:22,899 [INFO] HomePage - Selecting city. Query=Pune, expected suggestion=Pune, Maharashtra, India
+2026-05-23 21:13:24,806 [INFO] HomePage - Selected route: Mumbai, Maharashtra, India mumbai -> Pune, Maharashtra, India pune
+2026-05-23 21:13:25,375 [INFO] HomePage - Selected pickup date: 2026-05-26
+2026-05-23 21:13:25,948 [INFO] HomePage - Selected pickup time: 12:00 PM
+2026-05-23 21:13:25,948 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:13:30,804 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:13:30,907 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:13:32,103 [INFO] SearchResultsPage - Cab results are displayed with 11 selectable cabs.
+2026-05-23 21:13:32,127 [INFO] SearchResultsPage - Applying listing filter: SUV
+(7)
+2026-05-23 21:13:33,887 [INFO] SearchResultsPage - Filter outcome: {'filter': 'SUV', 'expected_result_text': 'SUV', 'applied': True, 'label': 'SUV\n(7)', 'result_text_present': False}
+2026-05-23 21:13:33,996 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:34,016 [INFO] SearchResultsPage - Applying listing filter: Diesel
+(3)
+2026-05-23 21:13:35,668 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'applied': True, 'label': 'Diesel\n(3)', 'result_text_present': False}
+2026-05-23 21:13:35,668 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:13:35,749 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:13:35,860 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:35,860 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:13:35,965 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:13:36,057 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:36,388 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'SUV', 'expected_result_text': 'SUV', 'result_text_present': False}, {'filter': 'Diesel', 'expected_result_text': 'Diesel', 'result_text_present': False}]
+2026-05-23 21:13:36,420 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:13:36,507 [INFO] root - STEP START: When the user selects a cab matching "Ertiga, Innova, SUV"
+2026-05-23 21:13:36,573 [INFO] SearchResultsPage - Cab results are displayed with 7 selectable cabs.
+2026-05-23 21:13:36,708 [INFO] SearchResultsPage - Selecting cab card: Xylo, Ertiga | or similar | 4.3/5 | AC | 6 Seats | 15% off  | ₹ 3,112 | ₹ 2,638 | + ₹586 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:13:37,072 [INFO] root - STEP END: When the user selects a cab matching "Ertiga, Innova, SUV" -> passed
+2026-05-23 21:13:37,226 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:13:45,442 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:13:45,442 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:13:45,538 [INFO] root - Finished scenario: Search SUV diesel cabs from Mumbai to Pune with status Status.passed

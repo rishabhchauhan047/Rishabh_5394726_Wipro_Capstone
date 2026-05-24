@@ -1,0 +1,5 @@
+{
+  "observations": [
+    "Could not click Apply time. Last error: Message: \nStacktrace:\n\tchromedriver!GetHandleVerifier [0x7ff781b97de5+14895]\n\tchromedriver!GetHandleVerifier [0x7ff781b97e50+14900]\n\tchromedriver!(No symbol) [0x7ff7818fd5ad]\n\tchromedriver!(No symbol) [0x7ff781957822]\n\tchromedriver!(No symbol) [0x7ff781957b2c]\n\tchromedriver!(No symbol) [0x7ff7819a7d17]\n\tchromedriver!(No symbol) [0x7ff7819a486f]\n\tchromedriver!(No symbol) [0x7ff781949df8]\n\tchromedriver!(No symbol) [0x7ff78194ace3]\n\tchromedriver!GetHandleVerifier [0x7ff781eacc49+3296f9]\n\tchromedriver!GetHandleVerifier [0x7ff781ea7375+323e25]\n\tchromedriver!GetHandleVerifier [0x7ff781ecbc82+348732]\n\tchromedriver!GetHandleVerifier [0x7ff781bb6045+32af5]\n\tchromedriver!GetHandleVerifier [0x7ff781bbecec+3b79c]\n\tchromedriver!GetHandleVerifier [0x7ff781ba1bc4+1e674]\n\tchromedriver!GetHandleVerifier [0x7ff781ba1d54+1e804]\n\tchromedriver!GetHandleVerifier [0x7ff781b860e7+2b97]\n\tKERNEL32!BaseThreadInitThunk [0x7ffb1dd4e957+17]\n\tntdll!RtlUserThreadStart [0x7ffb1e92427c+2c]\n"
+  ]
+}

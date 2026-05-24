@@ -1,0 +1,160 @@
+<testsuite name="goibibo_cab_positive.Goibibo cab positive search and filter coverage" tests="5" errors="0" failures="0" skipped="0" time="95.060929" timestamp="2026-05-23T21:14:57.059895" hostname="shadow"><testcase classname="goibibo_cab_positive.Goibibo cab positive search and filter coverage" name="Search sedan diesel cabs from Delhi to Agra" status="passed" time="19.816596"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @positive @filter @sedan @diesel
+  Scenario: Search sedan diesel cabs from Delhi to Agra
+    Given the user opens the Goibibo cab booking page ... passed in 2.390s
+    When the user searches one-way cabs ... passed in 10.498s
+      | pickup_query | pickup_suggestion       | drop_query | drop_suggestion            | pickup_date    | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Agra       | Agra, Uttar Pradesh, India | today + 2 days | 11:00 AM    |
+    And the user applies listing filters ... passed in 4.471s
+      | filter | expected_result_text |
+      | Sedan  | SEDAN                |
+      | Diesel | Diesel               |
+    Then available cab results should be displayed ... passed in 0.050s
+    And the listing should reflect the applied filters ... passed in 0.328s
+    When the user selects a cab matching "Dzire, Etios, Sedan" ... passed in 0.997s
+    Then the cab review page should be displayed ... passed in 1.083s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase><testcase classname="goibibo_cab_positive.Goibibo cab positive search and filter coverage" name="Search SUV diesel cabs from Mumbai to Pune" status="passed" time="27.508339"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @positive @filter @suv @diesel
+  Scenario: Search SUV diesel cabs from Mumbai to Pune
+    Given the user opens the Goibibo cab booking page ... passed in 2.202s
+    When the user searches one-way cabs ... passed in 11.198s
+      | pickup_query | pickup_suggestion          | drop_query | drop_suggestion          | pickup_date    | pickup_time |
+      | Mumbai       | Mumbai, Maharashtra, India | Pune       | Pune, Maharashtra, India | today + 3 days | 12:00 PM    |
+    And the user applies listing filters ... passed in 4.762s
+      | filter | expected_result_text |
+      | SUV    | SUV                  |
+      | Diesel | Diesel               |
+    Then available cab results should be displayed ... passed in 0.111s
+    And the listing should reflect the applied filters ... passed in 0.455s
+    When the user selects a cab matching "Ertiga, Innova, SUV" ... passed in 0.564s
+    Then the cab review page should be displayed ... passed in 8.217s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase><testcase classname="goibibo_cab_positive.Goibibo cab positive search and filter coverage" name="Search electric cabs from Bangalore to Mysuru" status="passed" time="15.173202"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @positive @filter @electric
+  Scenario: Search electric cabs from Bangalore to Mysuru
+    Given the user opens the Goibibo cab booking page ... passed in 2.207s
+    When the user searches one-way cabs ... passed in 8.465s
+      | pickup_query | pickup_suggestion           | drop_query | drop_suggestion          | pickup_date    | pickup_time |
+      | Bangalore    | Bangalore, Karnataka, India | Mysuru     | Mysuru, Karnataka, India | today + 4 days | 01:00 PM    |
+    And the user applies listing filters ... passed in 1.823s
+      | filter   | expected_result_text |
+      | Electric | Electric             |
+    Then available cab results should be displayed ... passed in 0.042s
+    And the listing should reflect the applied filters ... passed in 0.088s
+    When the user selects a cab matching "BYD E6, Electric, EV" ... passed in 0.927s
+    Then the cab review page should be displayed ... passed in 1.621s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase><testcase classname="goibibo_cab_positive.Goibibo cab positive search and filter coverage" name="Search petrol Innova Crysta cabs from Jaipur to Ajmer" status="passed" time="15.721848"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @positive @filter @petrol
+  Scenario: Search petrol Innova Crysta cabs from Jaipur to Ajmer
+    Given the user opens the Goibibo cab booking page ... passed in 2.562s
+    When the user searches one-way cabs ... passed in 9.463s
+      | pickup_query | pickup_suggestion        | drop_query | drop_suggestion         | pickup_date    | pickup_time |
+      | Jaipur       | Jaipur, Rajasthan, India | Ajmer      | Ajmer, Rajasthan, India | today + 5 days | 02:00 PM    |
+    And the user applies listing filters ... passed in 2.005s
+      | filter        | expected_result_text |
+      | Petrol        | Petrol               |
+      | Innova Crysta | Innova Crysta        |
+    Then available cab results should be displayed ... passed in 0.041s
+    And the listing should reflect the applied filters ... passed in 0.085s
+    When the user selects a cab matching "Innova Crysta, Innova" ... passed in 1.017s
+    Then the cab review page should be displayed ... passed in 0.549s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase><testcase classname="goibibo_cab_positive.Goibibo cab positive search and filter coverage" name="Search AC cabs from Delhi to Chandigarh" status="passed" time="16.840944"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @positive @different-city @ac
+  Scenario: Search AC cabs from Delhi to Chandigarh
+    Given the user opens the Goibibo cab booking page ... passed in 2.286s
+    When the user searches one-way cabs ... passed in 10.573s
+      | pickup_query | pickup_suggestion       | drop_query | drop_suggestion               | pickup_date    | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Chandigarh | Chandigarh, Chandigarh, India | today + 6 days | 09:00 AM    |
+    And the user applies listing filters ... passed in 2.284s
+      | filter | expected_result_text |
+      | Sedan  | SEDAN                |
+    Then available cab results should be displayed ... passed in 0.029s
+    And the listing should reflect the applied filters ... passed in 0.114s
+    And the cab listing should mention "AC" ... passed in 0.077s
+    When the user selects a cab matching "Dzire, Sedan" ... passed in 0.925s
+    Then the cab review page should be displayed ... passed in 0.553s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase></testsuite>

@@ -1,0 +1,36 @@
+2026-05-23 21:14:27,715 [INFO] root - Starting scenario: Search AC cabs from Delhi to Chandigarh
+2026-05-23 21:14:28,893 [INFO] root - STEP START: Given the user opens the Goibibo cab booking page
+2026-05-23 21:14:28,893 [INFO] HomePage - Opening Goibibo cab booking page: https://www.goibibo.com/cars/
+2026-05-23 21:14:31,179 [INFO] root - STEP END: Given the user opens the Goibibo cab booking page -> passed
+2026-05-23 21:14:39,416 [INFO] root - STEP START: When the user searches one-way cabs
+2026-05-23 21:14:39,728 [INFO] HomePage - Selected trip type: Outstation One-way
+2026-05-23 21:14:39,728 [INFO] HomePage - Selecting city. Query=Delhi, expected suggestion=New Delhi, Delhi, India
+2026-05-23 21:14:41,609 [INFO] HomePage - Selecting city. Query=Chandigarh, expected suggestion=Chandigarh, Chandigarh, India
+2026-05-23 21:14:43,546 [INFO] HomePage - Selected route: New Delhi, Delhi, India NCR -> Chandigarh, India
+2026-05-23 21:14:44,152 [INFO] HomePage - Selected pickup date: 2026-05-29
+2026-05-23 21:14:44,828 [INFO] HomePage - Selected pickup time: 09:00 AM
+2026-05-23 21:14:44,828 [INFO] HomePage - Submitting cab search.
+2026-05-23 21:14:49,990 [INFO] root - STEP END: When the user searches one-way cabs -> passed
+2026-05-23 21:14:50,094 [INFO] root - STEP START: And the user applies listing filters
+2026-05-23 21:14:50,796 [INFO] SearchResultsPage - Cab results are displayed with 8 selectable cabs.
+2026-05-23 21:14:50,824 [INFO] SearchResultsPage - Applying listing filter: Sedan
+(2)
+2026-05-23 21:14:52,378 [INFO] SearchResultsPage - Filter outcome: {'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'applied': True, 'label': 'Sedan\n(2)', 'result_text_present': False}
+2026-05-23 21:14:52,378 [INFO] root - STEP END: And the user applies listing filters -> passed
+2026-05-23 21:14:52,477 [INFO] root - STEP START: Then available cab results should be displayed
+2026-05-23 21:14:52,506 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:14:52,506 [INFO] root - STEP END: Then available cab results should be displayed -> passed
+2026-05-23 21:14:52,589 [INFO] root - STEP START: And the listing should reflect the applied filters
+2026-05-23 21:14:52,621 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:14:52,690 [INFO] SearchResultsPage - Applied filter observations: [{'filter': 'Sedan', 'expected_result_text': 'SEDAN', 'result_text_present': False}]
+2026-05-23 21:14:52,703 [INFO] root - STEP END: And the listing should reflect the applied filters -> passed
+2026-05-23 21:14:52,799 [INFO] root - STEP START: And the cab listing should mention "AC"
+2026-05-23 21:14:52,876 [INFO] root - STEP END: And the cab listing should mention "AC" -> passed
+2026-05-23 21:14:52,974 [INFO] root - STEP START: When the user selects a cab matching "Dzire, Sedan"
+2026-05-23 21:14:53,006 [INFO] SearchResultsPage - Cab results are displayed with 2 selectable cabs.
+2026-05-23 21:14:53,076 [INFO] SearchResultsPage - Selecting cab card: Dzire, Etios | or similar | 4.8/5 | AC | 4 Seats | ₹ 3,575 | + ₹237 (Taxes & Charges) | SELECT CAB
+2026-05-23 21:14:53,899 [INFO] root - STEP END: When the user selects a cab matching "Dzire, Sedan" -> passed
+2026-05-23 21:14:54,050 [INFO] root - STEP START: Then the cab review page should be displayed
+2026-05-23 21:14:54,603 [INFO] ReviewPage - Cab review page is displayed.
+2026-05-23 21:14:54,603 [INFO] root - STEP END: Then the cab review page should be displayed -> passed
+2026-05-23 21:14:54,722 [INFO] root - Finished scenario: Search AC cabs from Delhi to Chandigarh with status Status.passed

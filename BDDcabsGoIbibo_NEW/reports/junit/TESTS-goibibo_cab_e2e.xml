@@ -1,0 +1,42 @@
+<testsuite name="goibibo_cab_e2e.Goibibo cab end to end UPI QR flow" tests="1" errors="0" failures="0" skipped="0" time="48.453542" timestamp="2026-05-23T21:12:18.139464" hostname="shadow"><testcase classname="goibibo_cab_e2e.Goibibo cab end to end UPI QR flow" name="End to end one-way cab UPI QR flow for Delhi to Agra" status="passed" time="48.453542"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @e2e @positive @review
+  Scenario: End to end one-way cab UPI QR flow for Delhi to Agra
+    Given the user opens the Goibibo cab booking page ... passed in 2.997s
+    When the user searches one-way cabs ... passed in 10.829s
+      | pickup_query | pickup_suggestion       | drop_query | drop_suggestion            | pickup_date | pickup_time |
+      | Delhi        | New Delhi, Delhi, India | Agra       | Agra, Uttar Pradesh, India | tomorrow    | 10:00 AM    |
+    And the user applies listing filters ... passed in 4.179s
+      | filter    | expected_result_text |
+      | Hatchback | HATCHBACK            |
+      | Cng       | CNG                  |
+    Then available cab results should be displayed ... passed in 0.087s
+    And the listing should reflect the applied filters ... passed in 0.343s
+    When the user selects a cab matching "WagonR, Swift" ... passed in 1.053s
+    Then the cab review page should be displayed ... passed in 0.549s
+    When the user fills anonymous traveller details ... passed in 18.308s
+      | pickup_location                     | full_name           | mobile     | email                        |
+      | India Gate, New Delhi, Delhi, India | Anonymous Traveller | 9876543210 | anonymous.traveller@test.com |
+    Then the anonymous traveller details should remain filled ... passed in 0.097s
+    When the user continues to payment ... passed in 6.362s
+    And the user selects UPI payment option ... passed in 1.504s
+    And the user clicks Generate QR ... passed in 2.067s
+    Then the UPI QR payment request should be displayed ... passed in 0.045s
+    And no actual payment should be completed ... passed in 0.033s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+
+
+]]>
+</system-out><system-err>
+<![CDATA[
+Captured stderr:
+
+
+]]>
+</system-err></testcase></testsuite>

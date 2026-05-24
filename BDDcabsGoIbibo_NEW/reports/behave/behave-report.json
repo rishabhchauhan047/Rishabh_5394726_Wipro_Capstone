@@ -1,0 +1,1270 @@
+[
+{
+  "description": [
+    "The end to end test reaches the review page, fills anonymous traveller details,",
+    "opens payment, selects UPI, and stops after the QR request is displayed."
+  ],
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_e2e.feature:6",
+      "name": "End to end one-way cab UPI QR flow for Delhi to Agra",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_e2e.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 2.996670722961426,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_e2e.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:19"
+          },
+          "name": "the user searches one-way cabs",
+          "result": {
+            "duration": 10.829355955123901,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "drop_query",
+              "drop_suggestion",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Delhi",
+                "New Delhi, Delhi, India",
+                "Agra",
+                "Agra, Uttar Pradesh, India",
+                "tomorrow",
+                "10:00 AM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_e2e.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:32"
+          },
+          "name": "the user applies listing filters",
+          "result": {
+            "duration": 4.179001808166504,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "filter",
+              "expected_result_text"
+            ],
+            "rows": [
+              [
+                "Hatchback",
+                "HATCHBACK"
+              ],
+              [
+                "Cng",
+                "CNG"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_e2e.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:102"
+          },
+          "name": "available cab results should be displayed",
+          "result": {
+            "duration": 0.0874793529510498,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_e2e.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:107"
+          },
+          "name": "the listing should reflect the applied filters",
+          "result": {
+            "duration": 0.34270620346069336,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_e2e.feature:17",
+          "match": {
+            "arguments": [
+              {
+                "name": "cab_preference",
+                "value": "WagonR, Swift"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:47"
+          },
+          "name": "the user selects a cab matching \"WagonR, Swift\"",
+          "result": {
+            "duration": 1.0532317161560059,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_e2e.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:122"
+          },
+          "name": "the cab review page should be displayed",
+          "result": {
+            "duration": 0.5485570430755615,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_e2e.feature:19",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:52"
+          },
+          "name": "the user fills anonymous traveller details",
+          "result": {
+            "duration": 18.308310985565186,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_location",
+              "full_name",
+              "mobile",
+              "email"
+            ],
+            "rows": [
+              [
+                "India Gate, New Delhi, Delhi, India",
+                "Anonymous Traveller",
+                "9876543210",
+                "anonymous.traveller@test.com"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_e2e.feature:22",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:127"
+          },
+          "name": "the anonymous traveller details should remain filled",
+          "result": {
+            "duration": 0.09712529182434082,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_e2e.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:64"
+          },
+          "name": "the user continues to payment",
+          "result": {
+            "duration": 6.3621015548706055,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_e2e.feature:24",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:69"
+          },
+          "name": "the user selects UPI payment option",
+          "result": {
+            "duration": 1.5036273002624512,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_e2e.feature:25",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:74"
+          },
+          "name": "the user clicks Generate QR",
+          "result": {
+            "duration": 2.0673468112945557,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_e2e.feature:26",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:138"
+          },
+          "name": "the UPI QR payment request should be displayed",
+          "result": {
+            "duration": 0.04512619972229004,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_e2e.feature:27",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:143"
+          },
+          "name": "no actual payment should be completed",
+          "result": {
+            "duration": 0.03290152549743652,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "e2e",
+        "positive",
+        "review"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/goibibo_cab_e2e.feature:1",
+  "name": "Goibibo cab end to end UPI QR flow",
+  "status": "passed",
+  "tags": []
+},
+
+{
+  "description": [
+    "Negative tests are expected to pass when the invalid search is blocked.",
+    "Each negative scenario records what was attempted and what happened."
+  ],
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_negative.feature:6",
+      "name": "Search is blocked when drop city is missing",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_negative.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 3.343635320663452,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_negative.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:79"
+          },
+          "name": "the user attempts a cab search without a drop city",
+          "result": {
+            "duration": 6.779921054840088,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Delhi",
+                "New Delhi, Delhi, India",
+                "tomorrow",
+                "10:00 AM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_negative.feature:11",
+          "match": {
+            "arguments": [
+              {
+                "name": "case_name",
+                "value": "missing drop city"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:148"
+          },
+          "name": "the negative outcome \"missing drop city\" should be recorded",
+          "result": {
+            "duration": 0.009616851806640625,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_negative.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:153"
+          },
+          "name": "cab listing should not open",
+          "result": {
+            "duration": 0.0002532005310058594,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "negative",
+        "validation"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_negative.feature:15",
+      "name": "Search is blocked when drop city is typed but not selected",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_negative.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 2.370361089706421,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_negative.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:90"
+          },
+          "name": "the user attempts a cab search with an unselected drop city",
+          "result": {
+            "duration": 9.324050188064575,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "invalid_drop_text",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Delhi",
+                "New Delhi, Delhi, India",
+                "Atlantis Nowhere",
+                "today + 2 days",
+                "11:00 AM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_negative.feature:20",
+          "match": {
+            "arguments": [
+              {
+                "name": "case_name",
+                "value": "unselected invalid drop city"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:148"
+          },
+          "name": "the negative outcome \"unselected invalid drop city\" should be recorded",
+          "result": {
+            "duration": 0.0003497600555419922,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_negative.feature:21",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:153"
+          },
+          "name": "cab listing should not open",
+          "result": {
+            "duration": 0.0003383159637451172,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "negative",
+        "validation"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/goibibo_cab_negative.feature:1",
+  "name": "Goibibo cab negative validation coverage",
+  "status": "passed",
+  "tags": []
+},
+
+{
+  "description": [
+    "Positive tests verify that searches, filters, and cab result cards work for",
+    "different car preferences and journeys."
+  ],
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_positive.feature:6",
+      "name": "Search sedan diesel cabs from Delhi to Agra",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_positive.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 2.3896212577819824,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:8",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:19"
+          },
+          "name": "the user searches one-way cabs",
+          "result": {
+            "duration": 10.497879266738892,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "drop_query",
+              "drop_suggestion",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Delhi",
+                "New Delhi, Delhi, India",
+                "Agra",
+                "Agra, Uttar Pradesh, India",
+                "today + 2 days",
+                "11:00 AM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:32"
+          },
+          "name": "the user applies listing filters",
+          "result": {
+            "duration": 4.4710752964019775,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "filter",
+              "expected_result_text"
+            ],
+            "rows": [
+              [
+                "Sedan",
+                "SEDAN"
+              ],
+              [
+                "Diesel",
+                "Diesel"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:102"
+          },
+          "name": "available cab results should be displayed",
+          "result": {
+            "duration": 0.04990553855895996,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:107"
+          },
+          "name": "the listing should reflect the applied filters",
+          "result": {
+            "duration": 0.32836103439331055,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:17",
+          "match": {
+            "arguments": [
+              {
+                "name": "cab_preference",
+                "value": "Dzire, Etios, Sedan"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:47"
+          },
+          "name": "the user selects a cab matching \"Dzire, Etios, Sedan\"",
+          "result": {
+            "duration": 0.9972329139709473,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:122"
+          },
+          "name": "the cab review page should be displayed",
+          "result": {
+            "duration": 1.0825207233428955,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "positive",
+        "filter",
+        "sedan",
+        "diesel"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_positive.feature:21",
+      "name": "Search SUV diesel cabs from Mumbai to Pune",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_positive.feature:22",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 2.2024519443511963,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:23",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:19"
+          },
+          "name": "the user searches one-way cabs",
+          "result": {
+            "duration": 11.197736740112305,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "drop_query",
+              "drop_suggestion",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Mumbai",
+                "Mumbai, Maharashtra, India",
+                "Pune",
+                "Pune, Maharashtra, India",
+                "today + 3 days",
+                "12:00 PM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:26",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:32"
+          },
+          "name": "the user applies listing filters",
+          "result": {
+            "duration": 4.761611223220825,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "filter",
+              "expected_result_text"
+            ],
+            "rows": [
+              [
+                "SUV",
+                "SUV"
+              ],
+              [
+                "Diesel",
+                "Diesel"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:30",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:102"
+          },
+          "name": "available cab results should be displayed",
+          "result": {
+            "duration": 0.11110281944274902,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:31",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:107"
+          },
+          "name": "the listing should reflect the applied filters",
+          "result": {
+            "duration": 0.45488786697387695,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:32",
+          "match": {
+            "arguments": [
+              {
+                "name": "cab_preference",
+                "value": "Ertiga, Innova, SUV"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:47"
+          },
+          "name": "the user selects a cab matching \"Ertiga, Innova, SUV\"",
+          "result": {
+            "duration": 0.5640289783477783,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:33",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:122"
+          },
+          "name": "the cab review page should be displayed",
+          "result": {
+            "duration": 8.216519355773926,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "positive",
+        "filter",
+        "suv",
+        "diesel"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_positive.feature:36",
+      "name": "Search electric cabs from Bangalore to Mysuru",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_positive.feature:37",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 2.206697702407837,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:38",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:19"
+          },
+          "name": "the user searches one-way cabs",
+          "result": {
+            "duration": 8.465168237686157,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "drop_query",
+              "drop_suggestion",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Bangalore",
+                "Bangalore, Karnataka, India",
+                "Mysuru",
+                "Mysuru, Karnataka, India",
+                "today + 4 days",
+                "01:00 PM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:41",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:32"
+          },
+          "name": "the user applies listing filters",
+          "result": {
+            "duration": 1.8234000205993652,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "filter",
+              "expected_result_text"
+            ],
+            "rows": [
+              [
+                "Electric",
+                "Electric"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:44",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:102"
+          },
+          "name": "available cab results should be displayed",
+          "result": {
+            "duration": 0.04224681854248047,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:45",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:107"
+          },
+          "name": "the listing should reflect the applied filters",
+          "result": {
+            "duration": 0.08753371238708496,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:46",
+          "match": {
+            "arguments": [
+              {
+                "name": "cab_preference",
+                "value": "BYD E6, Electric, EV"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:47"
+          },
+          "name": "the user selects a cab matching \"BYD E6, Electric, EV\"",
+          "result": {
+            "duration": 0.9274559020996094,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:47",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:122"
+          },
+          "name": "the cab review page should be displayed",
+          "result": {
+            "duration": 1.620699167251587,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "positive",
+        "filter",
+        "electric"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_positive.feature:50",
+      "name": "Search petrol Innova Crysta cabs from Jaipur to Ajmer",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_positive.feature:51",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 2.5615768432617188,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:52",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:19"
+          },
+          "name": "the user searches one-way cabs",
+          "result": {
+            "duration": 9.462758779525757,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "drop_query",
+              "drop_suggestion",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Jaipur",
+                "Jaipur, Rajasthan, India",
+                "Ajmer",
+                "Ajmer, Rajasthan, India",
+                "today + 5 days",
+                "02:00 PM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:55",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:32"
+          },
+          "name": "the user applies listing filters",
+          "result": {
+            "duration": 2.004856586456299,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "filter",
+              "expected_result_text"
+            ],
+            "rows": [
+              [
+                "Petrol",
+                "Petrol"
+              ],
+              [
+                "Innova Crysta",
+                "Innova Crysta"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:59",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:102"
+          },
+          "name": "available cab results should be displayed",
+          "result": {
+            "duration": 0.041127681732177734,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:60",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:107"
+          },
+          "name": "the listing should reflect the applied filters",
+          "result": {
+            "duration": 0.08524537086486816,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:61",
+          "match": {
+            "arguments": [
+              {
+                "name": "cab_preference",
+                "value": "Innova Crysta, Innova"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:47"
+          },
+          "name": "the user selects a cab matching \"Innova Crysta, Innova\"",
+          "result": {
+            "duration": 1.0168991088867188,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:62",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:122"
+          },
+          "name": "the cab review page should be displayed",
+          "result": {
+            "duration": 0.5493838787078857,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "positive",
+        "filter",
+        "petrol"
+      ],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/goibibo_cab_positive.feature:65",
+      "name": "Search AC cabs from Delhi to Chandigarh",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/goibibo_cab_positive.feature:66",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:9"
+          },
+          "name": "the user opens the Goibibo cab booking page",
+          "result": {
+            "duration": 2.2862703800201416,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:67",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:19"
+          },
+          "name": "the user searches one-way cabs",
+          "result": {
+            "duration": 10.573291540145874,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "pickup_query",
+              "pickup_suggestion",
+              "drop_query",
+              "drop_suggestion",
+              "pickup_date",
+              "pickup_time"
+            ],
+            "rows": [
+              [
+                "Delhi",
+                "New Delhi, Delhi, India",
+                "Chandigarh",
+                "Chandigarh, Chandigarh, India",
+                "today + 6 days",
+                "09:00 AM"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:70",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:32"
+          },
+          "name": "the user applies listing filters",
+          "result": {
+            "duration": 2.2836337089538574,
+            "status": "passed"
+          },
+          "step_type": "when",
+          "table": {
+            "headings": [
+              "filter",
+              "expected_result_text"
+            ],
+            "rows": [
+              [
+                "Sedan",
+                "SEDAN"
+              ]
+            ]
+          }
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:73",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:102"
+          },
+          "name": "available cab results should be displayed",
+          "result": {
+            "duration": 0.029448270797729492,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:74",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:107"
+          },
+          "name": "the listing should reflect the applied filters",
+          "result": {
+            "duration": 0.11376047134399414,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/goibibo_cab_positive.feature:75",
+          "match": {
+            "arguments": [
+              {
+                "name": "expected_text",
+                "value": "AC"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:112"
+          },
+          "name": "the cab listing should mention \"AC\"",
+          "result": {
+            "duration": 0.0772547721862793,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/goibibo_cab_positive.feature:76",
+          "match": {
+            "arguments": [
+              {
+                "name": "cab_preference",
+                "value": "Dzire, Sedan"
+              }
+            ],
+            "location": "features/steps/goibibo_cab_steps.py:47"
+          },
+          "name": "the user selects a cab matching \"Dzire, Sedan\"",
+          "result": {
+            "duration": 0.9247698783874512,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/goibibo_cab_positive.feature:77",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/goibibo_cab_steps.py:122"
+          },
+          "name": "the cab review page should be displayed",
+          "result": {
+            "duration": 0.5525152683258057,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [
+        "positive",
+        "different-city",
+        "ac"
+      ],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/goibibo_cab_positive.feature:1",
+  "name": "Goibibo cab positive search and filter coverage",
+  "status": "passed",
+  "tags": []
+}
+]

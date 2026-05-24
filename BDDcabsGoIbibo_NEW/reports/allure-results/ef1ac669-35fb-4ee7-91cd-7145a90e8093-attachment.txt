@@ -1,0 +1,12 @@
+Step: And the user clicks Generate QR
+Status: PASSED
+Current URL: https://payments.goibibo.com/checkout/?id=965679651928882
+
+Execution log:
+2026-05-23 21:12:13,412 [INFO] root - STEP START: And the user clicks Generate QR
+2026-05-23 21:12:13,456 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,523 [INFO] PaymentPage - Payment page is displayed: https://payments.goibibo.com/checkout/?id=965679651928882
+2026-05-23 21:12:13,994 [INFO] PaymentPage - UPI payment option is selected or already active.
+2026-05-23 21:12:14,342 [INFO] PaymentPage - Clicked UPI QR action button: VIEW QR
+2026-05-23 21:12:15,479 [INFO] PaymentPage - UPI QR payment request is displayed.
+2026-05-23 21:12:15,479 [INFO] root - STEP END: And the user clicks Generate QR -> passed

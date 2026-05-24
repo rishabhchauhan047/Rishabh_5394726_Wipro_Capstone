@@ -1,0 +1,8 @@
+Step: Then the UPI QR payment request should be displayed
+Status: PASSED
+Current URL: https://payments.goibibo.com/checkout/?id=965679651928882
+
+Execution log:
+2026-05-23 21:12:15,572 [INFO] root - STEP START: Then the UPI QR payment request should be displayed
+2026-05-23 21:12:15,617 [INFO] PaymentPage - UPI QR payment request is displayed.
+2026-05-23 21:12:15,618 [INFO] root - STEP END: Then the UPI QR payment request should be displayed -> passed
